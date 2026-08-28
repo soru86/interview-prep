@@ -1,0 +1,30 @@
+recruiter_keywords:
+  - recruiter
+  - hiring
+  - job opportunity
+  - open position
+  - talent acquisition
+  - staffing
+  - headhunter
+  - career opportunity
+  - we are looking for
+  - role at
+
+recruiter_domains:
+  - linkedin.com
+  - indeed.com
+  - hireez.com
+  - greenhouse.io
+  - lever.co
+
+excel_columns:
+  - Recruiter Name
+  - Contact Email
+  - Contact Phone
+  - Company
+  - Role Applied For
+  - Match Score
+  - Date of First Reply
+  - Email Subject
+  - Status
+  - Message ID

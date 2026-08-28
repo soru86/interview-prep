@@ -1,0 +1,24 @@
+environment: staging
+
+fullnameOverride: nest-js-demo-staging
+
+ingress:
+  enabled: true
+  hosts:
+    - host: staging.nest-js-demo.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+
+replicaCount: 1
+
+kafka:
+  enabled: true
+  brokers: kafka:29092
+
+config:
+  nodeEnv: production
+  corsOrigin: "*"
+
+secrets:
+  jwtSecret: staging-jwt-secret-change-me

@@ -1,0 +1,3241 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "AgentExecutor",
+        "importPath": "a2a.server.agent_execution",
+        "description": "a2a.server.agent_execution",
+        "isExtraImport": true,
+        "detail": "a2a.server.agent_execution",
+        "documentation": {}
+    },
+    {
+        "label": "RequestContext",
+        "importPath": "a2a.server.agent_execution",
+        "description": "a2a.server.agent_execution",
+        "isExtraImport": true,
+        "detail": "a2a.server.agent_execution",
+        "documentation": {}
+    },
+    {
+        "label": "AgentExecutor",
+        "importPath": "a2a.server.agent_execution",
+        "description": "a2a.server.agent_execution",
+        "isExtraImport": true,
+        "detail": "a2a.server.agent_execution",
+        "documentation": {}
+    },
+    {
+        "label": "RequestContext",
+        "importPath": "a2a.server.agent_execution",
+        "description": "a2a.server.agent_execution",
+        "isExtraImport": true,
+        "detail": "a2a.server.agent_execution",
+        "documentation": {}
+    },
+    {
+        "label": "AgentExecutor",
+        "importPath": "a2a.server.agent_execution",
+        "description": "a2a.server.agent_execution",
+        "isExtraImport": true,
+        "detail": "a2a.server.agent_execution",
+        "documentation": {}
+    },
+    {
+        "label": "RequestContext",
+        "importPath": "a2a.server.agent_execution",
+        "description": "a2a.server.agent_execution",
+        "isExtraImport": true,
+        "detail": "a2a.server.agent_execution",
+        "documentation": {}
+    },
+    {
+        "label": "EventQueue",
+        "importPath": "a2a.server.events",
+        "description": "a2a.server.events",
+        "isExtraImport": true,
+        "detail": "a2a.server.events",
+        "documentation": {}
+    },
+    {
+        "label": "EventQueue",
+        "importPath": "a2a.server.events",
+        "description": "a2a.server.events",
+        "isExtraImport": true,
+        "detail": "a2a.server.events",
+        "documentation": {}
+    },
+    {
+        "label": "EventQueue",
+        "importPath": "a2a.server.events",
+        "description": "a2a.server.events",
+        "isExtraImport": true,
+        "detail": "a2a.server.events",
+        "documentation": {}
+    },
+    {
+        "label": "AgentSkill",
+        "importPath": "a2a.types",
+        "description": "a2a.types",
+        "isExtraImport": true,
+        "detail": "a2a.types",
+        "documentation": {}
+    },
+    {
+        "label": "AgentSkill",
+        "importPath": "a2a.types",
+        "description": "a2a.types",
+        "isExtraImport": true,
+        "detail": "a2a.types",
+        "documentation": {}
+    },
+    {
+        "label": "AgentCapabilities",
+        "importPath": "a2a.types",
+        "description": "a2a.types",
+        "isExtraImport": true,
+        "detail": "a2a.types",
+        "documentation": {}
+    },
+    {
+        "label": "AgentCard",
+        "importPath": "a2a.types",
+        "description": "a2a.types",
+        "isExtraImport": true,
+        "detail": "a2a.types",
+        "documentation": {}
+    },
+    {
+        "label": "AgentInterface",
+        "importPath": "a2a.types",
+        "description": "a2a.types",
+        "isExtraImport": true,
+        "detail": "a2a.types",
+        "documentation": {}
+    },
+    {
+        "label": "AgentSkill",
+        "importPath": "a2a.types",
+        "description": "a2a.types",
+        "isExtraImport": true,
+        "detail": "a2a.types",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "importPath": "a2a.types",
+        "description": "a2a.types",
+        "isExtraImport": true,
+        "detail": "a2a.types",
+        "documentation": {}
+    },
+    {
+        "label": "SendMessageRequest",
+        "importPath": "a2a.types",
+        "description": "a2a.types",
+        "isExtraImport": true,
+        "detail": "a2a.types",
+        "documentation": {}
+    },
+    {
+        "label": "TaskState",
+        "importPath": "a2a.types",
+        "description": "a2a.types",
+        "isExtraImport": true,
+        "detail": "a2a.types",
+        "documentation": {}
+    },
+    {
+        "label": "Starlette",
+        "importPath": "starlette.applications",
+        "description": "starlette.applications",
+        "isExtraImport": true,
+        "detail": "starlette.applications",
+        "documentation": {}
+    },
+    {
+        "label": "Starlette",
+        "importPath": "starlette.applications",
+        "description": "starlette.applications",
+        "isExtraImport": true,
+        "detail": "starlette.applications",
+        "documentation": {}
+    },
+    {
+        "label": "Starlette",
+        "importPath": "starlette.applications",
+        "description": "starlette.applications",
+        "isExtraImport": true,
+        "detail": "starlette.applications",
+        "documentation": {}
+    },
+    {
+        "label": "priority",
+        "importPath": "mail_a2a",
+        "description": "mail_a2a",
+        "isExtraImport": true,
+        "detail": "mail_a2a",
+        "documentation": {}
+    },
+    {
+        "label": "build_agent_card",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "build_app",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "complete_with_json",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "open_a2a_client",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "parse_json",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "request_text",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "send_json",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "build_agent_card",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "build_app",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "complete_with_json",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "parse_json",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "request_text",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "open_a2a_client",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "send_json",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "open_a2a_client",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "send_json",
+        "importPath": "mail_a2a.a2a_common",
+        "description": "mail_a2a.a2a_common",
+        "isExtraImport": true,
+        "detail": "mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaSettings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "clear_settings_cache",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "clear_settings_cache",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "MailboxSettings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "MailboxSettings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "WhatsAppSettings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "PASSTHROUGH_ENV",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "config_path",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG_PATH_ENV",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigError",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "clear_settings_cache",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "config_path",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigError",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "load_settings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "load_settings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaSettings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "MailboxSettings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "WhatsAppSettings",
+        "importPath": "mail_a2a.config",
+        "description": "mail_a2a.config",
+        "isExtraImport": true,
+        "detail": "mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaClient",
+        "importPath": "mail_a2a.llm",
+        "description": "mail_a2a.llm",
+        "isExtraImport": true,
+        "detail": "mail_a2a.llm",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaClient",
+        "importPath": "mail_a2a.llm",
+        "description": "mail_a2a.llm",
+        "isExtraImport": true,
+        "detail": "mail_a2a.llm",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaClient",
+        "importPath": "mail_a2a.llm",
+        "description": "mail_a2a.llm",
+        "isExtraImport": true,
+        "detail": "mail_a2a.llm",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "configure_stdio_server_logging",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "log_file_from_env",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "redact",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "configure_stdio_server_logging",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "log_file_from_env",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "redact",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "redact",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "configure_logging",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "redact",
+        "importPath": "mail_a2a.logging_setup",
+        "description": "mail_a2a.logging_setup",
+        "isExtraImport": true,
+        "detail": "mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "open_email_mcp",
+        "importPath": "mail_a2a.mcp_client",
+        "description": "mail_a2a.mcp_client",
+        "isExtraImport": true,
+        "detail": "mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "open_whatsapp_mcp",
+        "importPath": "mail_a2a.mcp_client",
+        "description": "mail_a2a.mcp_client",
+        "isExtraImport": true,
+        "detail": "mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "open_email_mcp",
+        "importPath": "mail_a2a.mcp_client",
+        "description": "mail_a2a.mcp_client",
+        "isExtraImport": true,
+        "detail": "mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "open_whatsapp_mcp",
+        "importPath": "mail_a2a.mcp_client",
+        "description": "mail_a2a.mcp_client",
+        "isExtraImport": true,
+        "detail": "mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "EmailSummary",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotifyRequest",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotifyResult",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "ScanRequest",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "ScanResult",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotifyRequest",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotifyResult",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "EmailSummary",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "ScanRequest",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "ScanResult",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "ScanResult",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotifyRequest",
+        "importPath": "mail_a2a.models",
+        "description": "mail_a2a.models",
+        "isExtraImport": true,
+        "detail": "mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "SeenStore",
+        "importPath": "mail_a2a.state",
+        "description": "mail_a2a.state",
+        "isExtraImport": true,
+        "detail": "mail_a2a.state",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TextIO",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "httpx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "httpx",
+        "description": "httpx",
+        "detail": "httpx",
+        "documentation": {}
+    },
+    {
+        "label": "MCPServer",
+        "importPath": "mcp.server",
+        "description": "mcp.server",
+        "isExtraImport": true,
+        "detail": "mcp.server",
+        "documentation": {}
+    },
+    {
+        "label": "MCPServer",
+        "importPath": "mcp.server",
+        "description": "mcp.server",
+        "isExtraImport": true,
+        "detail": "mcp.server",
+        "documentation": {}
+    },
+    {
+        "label": "Mailbox",
+        "importPath": "mail_a2a.providers.mailbox",
+        "description": "mail_a2a.providers.mailbox",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "build_mailbox",
+        "importPath": "mail_a2a.providers.mailbox",
+        "description": "mail_a2a.providers.mailbox",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "DemoMailbox",
+        "importPath": "mail_a2a.providers.mailbox",
+        "description": "mail_a2a.providers.mailbox",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "ImapMailbox",
+        "importPath": "mail_a2a.providers.mailbox",
+        "description": "mail_a2a.providers.mailbox",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "build_mailbox",
+        "importPath": "mail_a2a.providers.mailbox",
+        "description": "mail_a2a.providers.mailbox",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "build_channel",
+        "importPath": "mail_a2a.providers.whatsapp",
+        "description": "mail_a2a.providers.whatsapp",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "ConsoleChannel",
+        "importPath": "mail_a2a.providers.whatsapp",
+        "description": "mail_a2a.providers.whatsapp",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "MetaCloudChannel",
+        "importPath": "mail_a2a.providers.whatsapp",
+        "description": "mail_a2a.providers.whatsapp",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "TwilioChannel",
+        "importPath": "mail_a2a.providers.whatsapp",
+        "description": "mail_a2a.providers.whatsapp",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "build_channel",
+        "importPath": "mail_a2a.providers.whatsapp",
+        "description": "mail_a2a.providers.whatsapp",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "explain_error",
+        "importPath": "mail_a2a.providers.whatsapp",
+        "description": "mail_a2a.providers.whatsapp",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_number",
+        "importPath": "mail_a2a.providers.whatsapp",
+        "description": "mail_a2a.providers.whatsapp",
+        "isExtraImport": true,
+        "detail": "mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "email",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "email",
+        "description": "email",
+        "detail": "email",
+        "documentation": {}
+    },
+    {
+        "label": "imaplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "imaplib",
+        "description": "imaplib",
+        "detail": "imaplib",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "decode_header",
+        "importPath": "email.header",
+        "description": "email.header",
+        "isExtraImport": true,
+        "detail": "email.header",
+        "documentation": {}
+    },
+    {
+        "label": "make_header",
+        "importPath": "email.header",
+        "description": "email.header",
+        "isExtraImport": true,
+        "detail": "email.header",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "importPath": "email.message",
+        "description": "email.message",
+        "isExtraImport": true,
+        "detail": "email.message",
+        "documentation": {}
+    },
+    {
+        "label": "parsedate_to_datetime",
+        "importPath": "email.utils",
+        "description": "email.utils",
+        "isExtraImport": true,
+        "detail": "email.utils",
+        "documentation": {}
+    },
+    {
+        "label": "parseaddr",
+        "importPath": "email.utils",
+        "description": "email.utils",
+        "isExtraImport": true,
+        "detail": "email.utils",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "contextlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "ClientConfig",
+        "importPath": "a2a.client",
+        "description": "a2a.client",
+        "isExtraImport": true,
+        "detail": "a2a.client",
+        "documentation": {}
+    },
+    {
+        "label": "create_client",
+        "importPath": "a2a.client",
+        "description": "a2a.client",
+        "isExtraImport": true,
+        "detail": "a2a.client",
+        "documentation": {}
+    },
+    {
+        "label": "get_message_text",
+        "importPath": "a2a.helpers",
+        "description": "a2a.helpers",
+        "isExtraImport": true,
+        "detail": "a2a.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "new_task_from_user_message",
+        "importPath": "a2a.helpers",
+        "description": "a2a.helpers",
+        "isExtraImport": true,
+        "detail": "a2a.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "new_text_message",
+        "importPath": "a2a.helpers",
+        "description": "a2a.helpers",
+        "isExtraImport": true,
+        "detail": "a2a.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "new_text_part",
+        "importPath": "a2a.helpers",
+        "description": "a2a.helpers",
+        "isExtraImport": true,
+        "detail": "a2a.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "DefaultRequestHandler",
+        "importPath": "a2a.server.request_handlers",
+        "description": "a2a.server.request_handlers",
+        "isExtraImport": true,
+        "detail": "a2a.server.request_handlers",
+        "documentation": {}
+    },
+    {
+        "label": "create_agent_card_routes",
+        "importPath": "a2a.server.routes",
+        "description": "a2a.server.routes",
+        "isExtraImport": true,
+        "detail": "a2a.server.routes",
+        "documentation": {}
+    },
+    {
+        "label": "create_jsonrpc_routes",
+        "importPath": "a2a.server.routes",
+        "description": "a2a.server.routes",
+        "isExtraImport": true,
+        "detail": "a2a.server.routes",
+        "documentation": {}
+    },
+    {
+        "label": "InMemoryTaskStore",
+        "importPath": "a2a.server.tasks",
+        "description": "a2a.server.tasks",
+        "isExtraImport": true,
+        "detail": "a2a.server.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskUpdater",
+        "importPath": "a2a.server.tasks",
+        "description": "a2a.server.tasks",
+        "isExtraImport": true,
+        "detail": "a2a.server.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "AGENT_CARD_WELL_KNOWN_PATH",
+        "importPath": "a2a.utils.constants",
+        "description": "a2a.utils.constants",
+        "isExtraImport": true,
+        "detail": "a2a.utils.constants",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "structlog",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "structlog",
+        "description": "structlog",
+        "detail": "structlog",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncIterator",
+        "importPath": "collections.abc",
+        "description": "collections.abc",
+        "isExtraImport": true,
+        "detail": "collections.abc",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "mcp",
+        "description": "mcp",
+        "isExtraImport": true,
+        "detail": "mcp",
+        "documentation": {}
+    },
+    {
+        "label": "StdioServerParameters",
+        "importPath": "mcp",
+        "description": "mcp",
+        "isExtraImport": true,
+        "detail": "mcp",
+        "documentation": {}
+    },
+    {
+        "label": "stdio_client",
+        "importPath": "mcp.client.stdio",
+        "description": "mcp.client.stdio",
+        "isExtraImport": true,
+        "detail": "mcp.client.stdio",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "build_mailbox_app",
+        "importPath": "mail_a2a.agents.mailbox_agent",
+        "description": "mail_a2a.agents.mailbox_agent",
+        "isExtraImport": true,
+        "detail": "mail_a2a.agents.mailbox_agent",
+        "documentation": {}
+    },
+    {
+        "label": "build_whatsapp_app",
+        "importPath": "mail_a2a.agents.whatsapp_agent",
+        "description": "mail_a2a.agents.whatsapp_agent",
+        "isExtraImport": true,
+        "detail": "mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "one_line",
+        "importPath": "mail_a2a.agents.whatsapp_agent",
+        "description": "mail_a2a.agents.whatsapp_agent",
+        "isExtraImport": true,
+        "detail": "mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "render_message",
+        "importPath": "mail_a2a.agents.whatsapp_agent",
+        "description": "mail_a2a.agents.whatsapp_agent",
+        "isExtraImport": true,
+        "detail": "mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {}
+    },
+    {
+        "label": "run_scan",
+        "importPath": "mail_a2a.runner",
+        "description": "mail_a2a.runner",
+        "isExtraImport": true,
+        "detail": "mail_a2a.runner",
+        "documentation": {}
+    },
+    {
+        "label": "running_agents",
+        "importPath": "mail_a2a.runner",
+        "description": "mail_a2a.runner",
+        "isExtraImport": true,
+        "detail": "mail_a2a.runner",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaClient",
+        "importPath": "mail_a2a.llm.ollama",
+        "description": "mail_a2a.llm.ollama",
+        "isExtraImport": true,
+        "detail": "mail_a2a.llm.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaUnavailable",
+        "importPath": "mail_a2a.llm.ollama",
+        "description": "mail_a2a.llm.ollama",
+        "isExtraImport": true,
+        "detail": "mail_a2a.llm.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "strip_reasoning",
+        "importPath": "mail_a2a.llm.ollama",
+        "description": "mail_a2a.llm.ollama",
+        "isExtraImport": true,
+        "detail": "mail_a2a.llm.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate",
+        "importPath": "mail_a2a.priority",
+        "description": "mail_a2a.priority",
+        "isExtraImport": true,
+        "detail": "mail_a2a.priority",
+        "documentation": {}
+    },
+    {
+        "label": "match_keywords",
+        "importPath": "mail_a2a.priority",
+        "description": "mail_a2a.priority",
+        "isExtraImport": true,
+        "detail": "mail_a2a.priority",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"llm-agent-a2a-demo-claude\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"llm-agent-a2a-demo-claude\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"llm-agent-a2a-demo-claude\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"llm-agent-a2a-demo-claude\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"llm-agent-a2a-demo-claude\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "MailboxAgentExecutor",
+        "kind": 6,
+        "importPath": "src.mail_a2a.agents.mailbox_agent",
+        "description": "src.mail_a2a.agents.mailbox_agent",
+        "peekOfCode": "class MailboxAgentExecutor(AgentExecutor):\n    \"\"\"A2A skill: `scan_and_notify`.\"\"\"\n    def __init__(self, settings: Settings) -> None:\n        self.settings = settings\n        self.llm = OllamaClient(settings.ollama, agent=AGENT_NAME)\n        self.seen = SeenStore(settings.state_file)\n    async def execute(self, context: RequestContext, event_queue: EventQueue) -> None:\n        raw = request_text(context)\n        log.info(\"a2a_received\", agent=AGENT_NAME, skill=\"scan_and_notify\", payload_chars=len(raw))\n        payload = parse_json(raw)",
+        "detail": "src.mail_a2a.agents.mailbox_agent",
+        "documentation": {}
+    },
+    {
+        "label": "build_mailbox_app",
+        "kind": 2,
+        "importPath": "src.mail_a2a.agents.mailbox_agent",
+        "description": "src.mail_a2a.agents.mailbox_agent",
+        "peekOfCode": "def build_mailbox_app(settings: Settings) -> Starlette:\n    endpoint = settings.agents.mailbox\n    card = build_agent_card(\n        name=AGENT_NAME,\n        description=(\n            \"Reads the configured mailbox over MCP, flags top-priority mail and \"\n            \"delegates notification to the WhatsApp notifier agent.\"\n        ),\n        url=endpoint.url,\n        skills=[",
+        "detail": "src.mail_a2a.agents.mailbox_agent",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.agents.mailbox_agent",
+        "description": "src.mail_a2a.agents.mailbox_agent",
+        "peekOfCode": "log = get_logger(__name__)\nAGENT_NAME = \"mailbox-reader-agent\"\nSUMMARY_SYSTEM_PROMPT = (\n    \"You triage email. Reply with a single JSON object and nothing else, using \"\n    'exactly these keys: {\"summary\": \"<max 18 words>\", \"job_related\": true|false}. '\n    \"No markdown, no code fences, no commentary.\"\n)\ndef _summary_prompt(message: EmailSummary) -> str:\n    return (\n        f\"From: {message.sender}\\n\"",
+        "detail": "src.mail_a2a.agents.mailbox_agent",
+        "documentation": {}
+    },
+    {
+        "label": "AGENT_NAME",
+        "kind": 5,
+        "importPath": "src.mail_a2a.agents.mailbox_agent",
+        "description": "src.mail_a2a.agents.mailbox_agent",
+        "peekOfCode": "AGENT_NAME = \"mailbox-reader-agent\"\nSUMMARY_SYSTEM_PROMPT = (\n    \"You triage email. Reply with a single JSON object and nothing else, using \"\n    'exactly these keys: {\"summary\": \"<max 18 words>\", \"job_related\": true|false}. '\n    \"No markdown, no code fences, no commentary.\"\n)\ndef _summary_prompt(message: EmailSummary) -> str:\n    return (\n        f\"From: {message.sender}\\n\"\n        f\"Subject: {message.subject}\\n\"",
+        "detail": "src.mail_a2a.agents.mailbox_agent",
+        "documentation": {}
+    },
+    {
+        "label": "SUMMARY_SYSTEM_PROMPT",
+        "kind": 5,
+        "importPath": "src.mail_a2a.agents.mailbox_agent",
+        "description": "src.mail_a2a.agents.mailbox_agent",
+        "peekOfCode": "SUMMARY_SYSTEM_PROMPT = (\n    \"You triage email. Reply with a single JSON object and nothing else, using \"\n    'exactly these keys: {\"summary\": \"<max 18 words>\", \"job_related\": true|false}. '\n    \"No markdown, no code fences, no commentary.\"\n)\ndef _summary_prompt(message: EmailSummary) -> str:\n    return (\n        f\"From: {message.sender}\\n\"\n        f\"Subject: {message.subject}\\n\"\n        f\"Body: {message.snippet[:500] or '(empty)'}\\n\\n\"",
+        "detail": "src.mail_a2a.agents.mailbox_agent",
+        "documentation": {}
+    },
+    {
+        "label": "WhatsAppAgentExecutor",
+        "kind": 6,
+        "importPath": "src.mail_a2a.agents.whatsapp_agent",
+        "description": "src.mail_a2a.agents.whatsapp_agent",
+        "peekOfCode": "class WhatsAppAgentExecutor(AgentExecutor):\n    \"\"\"A2A skill: `notify_whatsapp`.\"\"\"\n    def __init__(self, settings: Settings) -> None:\n        self.settings = settings\n        self.llm = OllamaClient(settings.ollama, agent=AGENT_NAME)\n    async def execute(self, context: RequestContext, event_queue: EventQueue) -> None:\n        raw = request_text(context)\n        log.info(\"a2a_received\", agent=AGENT_NAME, skill=\"notify_whatsapp\", payload_chars=len(raw))\n        try:\n            request = NotifyRequest.model_validate(parse_json(raw))",
+        "detail": "src.mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "one_line",
+        "kind": 2,
+        "importPath": "src.mail_a2a.agents.whatsapp_agent",
+        "description": "src.mail_a2a.agents.whatsapp_agent",
+        "peekOfCode": "def one_line(text: str) -> str:\n    \"\"\"Squeeze a model answer into a single short sentence.\n    A 1.5B model does not reliably respect \"one line, 20 words\", so the length\n    limit is enforced here rather than trusted to the prompt.\n    \"\"\"\n    cleaned = \" \".join((text or \"\").split())\n    cleaned = cleaned.strip(\"`\\\"'* \")\n    if not cleaned:\n        return \"\"\n    first_sentence = re.split(r\"(?<=[.!?])\\s\", cleaned, maxsplit=1)[0]",
+        "detail": "src.mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "render_message",
+        "kind": 2,
+        "importPath": "src.mail_a2a.agents.whatsapp_agent",
+        "description": "src.mail_a2a.agents.whatsapp_agent",
+        "peekOfCode": "def render_message(request: NotifyRequest, context_line: str = \"\") -> str:\n    \"\"\"The exact WhatsApp text. Sender, subject and priority flag are guaranteed.\"\"\"\n    lines: list[str] = []\n    if request.priority:\n        matched = \", \".join(request.matched_keywords)\n        lines.append(\"🚩 *TOP PRIORITY*\" + (f\" ({matched})\" if matched else \"\"))\n    lines.append(\"📧 *New email*\")\n    lines.append(f\"*From:* {request.sender}\")\n    lines.append(f\"*Subject:* {request.subject}\")\n    if request.received_at:",
+        "detail": "src.mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "build_whatsapp_app",
+        "kind": 2,
+        "importPath": "src.mail_a2a.agents.whatsapp_agent",
+        "description": "src.mail_a2a.agents.whatsapp_agent",
+        "peekOfCode": "def build_whatsapp_app(settings: Settings) -> Starlette:\n    endpoint = settings.agents.whatsapp\n    card = build_agent_card(\n        name=AGENT_NAME,\n        description=(\n            \"Delivers WhatsApp notifications about incoming email, flagging \"\n            \"top-priority messages.\"\n        ),\n        url=endpoint.url,\n        skills=[",
+        "detail": "src.mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.agents.whatsapp_agent",
+        "description": "src.mail_a2a.agents.whatsapp_agent",
+        "peekOfCode": "log = get_logger(__name__)\nAGENT_NAME = \"whatsapp-notifier-agent\"\nSYSTEM_PROMPT = (\n    \"Summarize an email in ONE short sentence for a phone notification. \"\n    \"Answer with that sentence only: no preamble, no quotes, no emoji, no markdown. \"\n    'Example answer: \"A recruiter is asking about your availability for a call.\"'\n)\nMAX_CONTEXT_WORDS = 24\ndef one_line(text: str) -> str:\n    \"\"\"Squeeze a model answer into a single short sentence.",
+        "detail": "src.mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "AGENT_NAME",
+        "kind": 5,
+        "importPath": "src.mail_a2a.agents.whatsapp_agent",
+        "description": "src.mail_a2a.agents.whatsapp_agent",
+        "peekOfCode": "AGENT_NAME = \"whatsapp-notifier-agent\"\nSYSTEM_PROMPT = (\n    \"Summarize an email in ONE short sentence for a phone notification. \"\n    \"Answer with that sentence only: no preamble, no quotes, no emoji, no markdown. \"\n    'Example answer: \"A recruiter is asking about your availability for a call.\"'\n)\nMAX_CONTEXT_WORDS = 24\ndef one_line(text: str) -> str:\n    \"\"\"Squeeze a model answer into a single short sentence.\n    A 1.5B model does not reliably respect \"one line, 20 words\", so the length",
+        "detail": "src.mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "SYSTEM_PROMPT",
+        "kind": 5,
+        "importPath": "src.mail_a2a.agents.whatsapp_agent",
+        "description": "src.mail_a2a.agents.whatsapp_agent",
+        "peekOfCode": "SYSTEM_PROMPT = (\n    \"Summarize an email in ONE short sentence for a phone notification. \"\n    \"Answer with that sentence only: no preamble, no quotes, no emoji, no markdown. \"\n    'Example answer: \"A recruiter is asking about your availability for a call.\"'\n)\nMAX_CONTEXT_WORDS = 24\ndef one_line(text: str) -> str:\n    \"\"\"Squeeze a model answer into a single short sentence.\n    A 1.5B model does not reliably respect \"one line, 20 words\", so the length\n    limit is enforced here rather than trusted to the prompt.",
+        "detail": "src.mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_CONTEXT_WORDS",
+        "kind": 5,
+        "importPath": "src.mail_a2a.agents.whatsapp_agent",
+        "description": "src.mail_a2a.agents.whatsapp_agent",
+        "peekOfCode": "MAX_CONTEXT_WORDS = 24\ndef one_line(text: str) -> str:\n    \"\"\"Squeeze a model answer into a single short sentence.\n    A 1.5B model does not reliably respect \"one line, 20 words\", so the length\n    limit is enforced here rather than trusted to the prompt.\n    \"\"\"\n    cleaned = \" \".join((text or \"\").split())\n    cleaned = cleaned.strip(\"`\\\"'* \")\n    if not cleaned:\n        return \"\"",
+        "detail": "src.mail_a2a.agents.whatsapp_agent",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaUnavailable",
+        "kind": 6,
+        "importPath": "src.mail_a2a.llm.ollama",
+        "description": "src.mail_a2a.llm.ollama",
+        "peekOfCode": "class OllamaUnavailable(RuntimeError):\n    \"\"\"Raised when the model cannot be reached and the config marks it required.\"\"\"\nclass OllamaClient:\n    \"\"\"Thin async wrapper over Ollama's /api/chat.\"\"\"\n    def __init__(self, settings: OllamaSettings, *, agent: str = \"\") -> None:\n        self.settings = settings\n        self.agent = agent\n        self._base_url = settings.base_url.rstrip(\"/\")\n    async def health(self) -> dict[str, Any]:\n        \"\"\"Check the daemon is up and the configured model is pulled.\"\"\"",
+        "detail": "src.mail_a2a.llm.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaClient",
+        "kind": 6,
+        "importPath": "src.mail_a2a.llm.ollama",
+        "description": "src.mail_a2a.llm.ollama",
+        "peekOfCode": "class OllamaClient:\n    \"\"\"Thin async wrapper over Ollama's /api/chat.\"\"\"\n    def __init__(self, settings: OllamaSettings, *, agent: str = \"\") -> None:\n        self.settings = settings\n        self.agent = agent\n        self._base_url = settings.base_url.rstrip(\"/\")\n    async def health(self) -> dict[str, Any]:\n        \"\"\"Check the daemon is up and the configured model is pulled.\"\"\"\n        try:\n            async with httpx.AsyncClient(timeout=10) as client:",
+        "detail": "src.mail_a2a.llm.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "strip_reasoning",
+        "kind": 2,
+        "importPath": "src.mail_a2a.llm.ollama",
+        "description": "src.mail_a2a.llm.ollama",
+        "peekOfCode": "def strip_reasoning(text: str) -> str:\n    \"\"\"Remove DeepSeek R1's chain-of-thought block from a completion.\"\"\"\n    cleaned = _THINK_BLOCK.sub(\"\", text or \"\")\n    # A truncated response can leave an unclosed <think>; drop the tail.\n    cleaned = _ORPHAN_OPEN.sub(\"\", cleaned)\n    return cleaned.strip()\ndef _extract_json_object(text: str) -> dict[str, Any] | None:\n    \"\"\"Best-effort JSON object recovery from a chatty completion.\"\"\"\n    text = text.strip()\n    if not text:",
+        "detail": "src.mail_a2a.llm.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.llm.ollama",
+        "description": "src.mail_a2a.llm.ollama",
+        "peekOfCode": "log = get_logger(__name__)\n_THINK_BLOCK = re.compile(r\"<think>.*?</think>\", re.DOTALL | re.IGNORECASE)\n_ORPHAN_OPEN = re.compile(r\"<think>.*\", re.DOTALL | re.IGNORECASE)\ndef strip_reasoning(text: str) -> str:\n    \"\"\"Remove DeepSeek R1's chain-of-thought block from a completion.\"\"\"\n    cleaned = _THINK_BLOCK.sub(\"\", text or \"\")\n    # A truncated response can leave an unclosed <think>; drop the tail.\n    cleaned = _ORPHAN_OPEN.sub(\"\", cleaned)\n    return cleaned.strip()\ndef _extract_json_object(text: str) -> dict[str, Any] | None:",
+        "detail": "src.mail_a2a.llm.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "_THINK_BLOCK",
+        "kind": 5,
+        "importPath": "src.mail_a2a.llm.ollama",
+        "description": "src.mail_a2a.llm.ollama",
+        "peekOfCode": "_THINK_BLOCK = re.compile(r\"<think>.*?</think>\", re.DOTALL | re.IGNORECASE)\n_ORPHAN_OPEN = re.compile(r\"<think>.*\", re.DOTALL | re.IGNORECASE)\ndef strip_reasoning(text: str) -> str:\n    \"\"\"Remove DeepSeek R1's chain-of-thought block from a completion.\"\"\"\n    cleaned = _THINK_BLOCK.sub(\"\", text or \"\")\n    # A truncated response can leave an unclosed <think>; drop the tail.\n    cleaned = _ORPHAN_OPEN.sub(\"\", cleaned)\n    return cleaned.strip()\ndef _extract_json_object(text: str) -> dict[str, Any] | None:\n    \"\"\"Best-effort JSON object recovery from a chatty completion.\"\"\"",
+        "detail": "src.mail_a2a.llm.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "_ORPHAN_OPEN",
+        "kind": 5,
+        "importPath": "src.mail_a2a.llm.ollama",
+        "description": "src.mail_a2a.llm.ollama",
+        "peekOfCode": "_ORPHAN_OPEN = re.compile(r\"<think>.*\", re.DOTALL | re.IGNORECASE)\ndef strip_reasoning(text: str) -> str:\n    \"\"\"Remove DeepSeek R1's chain-of-thought block from a completion.\"\"\"\n    cleaned = _THINK_BLOCK.sub(\"\", text or \"\")\n    # A truncated response can leave an unclosed <think>; drop the tail.\n    cleaned = _ORPHAN_OPEN.sub(\"\", cleaned)\n    return cleaned.strip()\ndef _extract_json_object(text: str) -> dict[str, Any] | None:\n    \"\"\"Best-effort JSON object recovery from a chatty completion.\"\"\"\n    text = text.strip()",
+        "detail": "src.mail_a2a.llm.ollama",
+        "documentation": {}
+    },
+    {
+        "label": "ping",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_servers.email_mcp",
+        "description": "src.mail_a2a.mcp_servers.email_mcp",
+        "peekOfCode": "def ping() -> dict:\n    \"\"\"Check that the configured mailbox is reachable and report its message count.\"\"\"\n    _log_call(\"ping\")\n    mailbox = _mailbox()\n    try:\n        result = mailbox.ping()\n    finally:\n        mailbox.close()\n    log.info(\"mcp_tool_done\", server=SERVER_NAME, tool=\"ping\", ok=result.get(\"ok\"))\n    return result",
+        "detail": "src.mail_a2a.mcp_servers.email_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "list_messages",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_servers.email_mcp",
+        "description": "src.mail_a2a.mcp_servers.email_mcp",
+        "peekOfCode": "def list_messages(max_results: int = 10, unread_only: bool = True) -> dict:\n    \"\"\"List recent mailbox messages, newest first, with sender, subject and a body snippet.\n    Args:\n        max_results: Maximum number of messages to return.\n        unread_only: When true, only unread messages are returned.\n    \"\"\"\n    _log_call(\"list_messages\", max_results=max_results, unread_only=unread_only)\n    mailbox = _mailbox()\n    try:\n        messages = mailbox.list_messages(max_results=max_results, unread_only=unread_only)",
+        "detail": "src.mail_a2a.mcp_servers.email_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "mark_seen",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_servers.email_mcp",
+        "description": "src.mail_a2a.mcp_servers.email_mcp",
+        "peekOfCode": "def mark_seen(uid: str) -> dict:\n    \"\"\"Mark a message as read by its UID (no-op unless mailbox.mark_seen is enabled).\n    Args:\n        uid: The mailbox UID of the message.\n    \"\"\"\n    _log_call(\"mark_seen\", uid=uid)\n    mailbox = _mailbox()\n    try:\n        ok = mailbox.mark_seen(uid)\n    finally:",
+        "detail": "src.mail_a2a.mcp_servers.email_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_servers.email_mcp",
+        "description": "src.mail_a2a.mcp_servers.email_mcp",
+        "peekOfCode": "def main() -> None:\n    clear_settings_cache()\n    settings = get_settings()\n    configure_stdio_server_logging(\n        level=os.environ.get(\"MAIL_A2A_LOG_LEVEL\", settings.logging.level),\n        log_file=log_file_from_env() or settings.logging.file,\n    )\n    log.info(\n        \"mcp_server_start\",\n        server=SERVER_NAME,",
+        "detail": "src.mail_a2a.mcp_servers.email_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.mcp_servers.email_mcp",
+        "description": "src.mail_a2a.mcp_servers.email_mcp",
+        "peekOfCode": "log = get_logger(__name__)\nSERVER_NAME = \"email-mcp\"\nmcp = MCPServer(\n    SERVER_NAME,\n    instructions=\"Read-only mailbox access: list messages with sender, subject and body snippet.\",\n)\ndef _mailbox() -> Mailbox:\n    return build_mailbox(get_settings().mailbox)\ndef _log_call(tool: str, **kwargs: Any) -> None:\n    log.info(\"mcp_tool_invoked\", server=SERVER_NAME, tool=tool, args=redact(kwargs))",
+        "detail": "src.mail_a2a.mcp_servers.email_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "SERVER_NAME",
+        "kind": 5,
+        "importPath": "src.mail_a2a.mcp_servers.email_mcp",
+        "description": "src.mail_a2a.mcp_servers.email_mcp",
+        "peekOfCode": "SERVER_NAME = \"email-mcp\"\nmcp = MCPServer(\n    SERVER_NAME,\n    instructions=\"Read-only mailbox access: list messages with sender, subject and body snippet.\",\n)\ndef _mailbox() -> Mailbox:\n    return build_mailbox(get_settings().mailbox)\ndef _log_call(tool: str, **kwargs: Any) -> None:\n    log.info(\"mcp_tool_invoked\", server=SERVER_NAME, tool=tool, args=redact(kwargs))\n@mcp.tool()",
+        "detail": "src.mail_a2a.mcp_servers.email_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "mcp",
+        "kind": 5,
+        "importPath": "src.mail_a2a.mcp_servers.email_mcp",
+        "description": "src.mail_a2a.mcp_servers.email_mcp",
+        "peekOfCode": "mcp = MCPServer(\n    SERVER_NAME,\n    instructions=\"Read-only mailbox access: list messages with sender, subject and body snippet.\",\n)\ndef _mailbox() -> Mailbox:\n    return build_mailbox(get_settings().mailbox)\ndef _log_call(tool: str, **kwargs: Any) -> None:\n    log.info(\"mcp_tool_invoked\", server=SERVER_NAME, tool=tool, args=redact(kwargs))\n@mcp.tool()\ndef ping() -> dict:",
+        "detail": "src.mail_a2a.mcp_servers.email_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "describe_channel",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "description": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "peekOfCode": "def describe_channel() -> dict:\n    \"\"\"Report which WhatsApp provider is configured and the default destination number.\"\"\"\n    _log_call(\"describe_channel\")\n    settings = get_settings()\n    return {\n        \"provider\": settings.whatsapp.provider,\n        \"default_to\": settings.whatsapp.to,\n        \"configured\": bool(settings.whatsapp.to),\n    }\n@mcp.tool()",
+        "detail": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "verify_credentials",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "description": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "peekOfCode": "def verify_credentials() -> dict:\n    \"\"\"Check that the configured WhatsApp provider accepts its credentials.\"\"\"\n    _log_call(\"verify_credentials\")\n    settings = get_settings()\n    try:\n        channel = build_channel(settings.whatsapp)\n    except RuntimeError as exc:\n        return {\"ok\": False, \"provider\": settings.whatsapp.provider, \"error\": str(exc)}\n    result = asyncio.run(channel.verify())\n    log.info(",
+        "detail": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "send_whatsapp_message",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "description": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "peekOfCode": "def send_whatsapp_message(text: str, to: str = \"\", priority: bool = False) -> dict:\n    \"\"\"Send a WhatsApp message to the configured recipient.\n    Args:\n        text: The message body to deliver.\n        to: Destination number in international format; defaults to whatsapp.to from config.\n        priority: Marks the notification as top priority (used for logging and formatting).\n    \"\"\"\n    settings = get_settings()\n    destination = to or settings.whatsapp.to\n    _log_call(\"send_whatsapp_message\", to=destination, priority=priority, chars=len(text))",
+        "detail": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "description": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "peekOfCode": "def main() -> None:\n    clear_settings_cache()\n    settings = get_settings()\n    configure_stdio_server_logging(\n        level=os.environ.get(\"MAIL_A2A_LOG_LEVEL\", settings.logging.level),\n        log_file=log_file_from_env() or settings.logging.file,\n    )\n    log.info(\n        \"mcp_server_start\",\n        server=SERVER_NAME,",
+        "detail": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "description": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "peekOfCode": "log = get_logger(__name__)\nSERVER_NAME = \"whatsapp-mcp\"\nmcp = MCPServer(\n    SERVER_NAME,\n    instructions=\"Send WhatsApp notifications through the configured provider.\",\n)\ndef _log_call(tool: str, **kwargs: Any) -> None:\n    log.info(\"mcp_tool_invoked\", server=SERVER_NAME, tool=tool, args=redact(kwargs))\n@mcp.tool()\ndef describe_channel() -> dict:",
+        "detail": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "SERVER_NAME",
+        "kind": 5,
+        "importPath": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "description": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "peekOfCode": "SERVER_NAME = \"whatsapp-mcp\"\nmcp = MCPServer(\n    SERVER_NAME,\n    instructions=\"Send WhatsApp notifications through the configured provider.\",\n)\ndef _log_call(tool: str, **kwargs: Any) -> None:\n    log.info(\"mcp_tool_invoked\", server=SERVER_NAME, tool=tool, args=redact(kwargs))\n@mcp.tool()\ndef describe_channel() -> dict:\n    \"\"\"Report which WhatsApp provider is configured and the default destination number.\"\"\"",
+        "detail": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "mcp",
+        "kind": 5,
+        "importPath": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "description": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "peekOfCode": "mcp = MCPServer(\n    SERVER_NAME,\n    instructions=\"Send WhatsApp notifications through the configured provider.\",\n)\ndef _log_call(tool: str, **kwargs: Any) -> None:\n    log.info(\"mcp_tool_invoked\", server=SERVER_NAME, tool=tool, args=redact(kwargs))\n@mcp.tool()\ndef describe_channel() -> dict:\n    \"\"\"Report which WhatsApp provider is configured and the default destination number.\"\"\"\n    _log_call(\"describe_channel\")",
+        "detail": "src.mail_a2a.mcp_servers.whatsapp_mcp",
+        "documentation": {}
+    },
+    {
+        "label": "Mailbox",
+        "kind": 6,
+        "importPath": "src.mail_a2a.providers.mailbox",
+        "description": "src.mail_a2a.providers.mailbox",
+        "peekOfCode": "class Mailbox(ABC):\n    \"\"\"Everything the email MCP server needs from a mail source.\"\"\"\n    @abstractmethod\n    def ping(self) -> dict[str, Any]:\n        \"\"\"Verify connectivity/credentials without fetching mail.\"\"\"\n    @abstractmethod\n    def list_messages(self, max_results: int, unread_only: bool) -> list[EmailSummary]:\n        \"\"\"Newest-first message summaries.\"\"\"\n    @abstractmethod\n    def mark_seen(self, uid: str) -> bool:",
+        "detail": "src.mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "DemoMailbox",
+        "kind": 6,
+        "importPath": "src.mail_a2a.providers.mailbox",
+        "description": "src.mail_a2a.providers.mailbox",
+        "peekOfCode": "class DemoMailbox(Mailbox):\n    \"\"\"Fixture-backed mailbox for running the demo without credentials.\"\"\"\n    def __init__(self, sample_file: str | Path) -> None:\n        self.path = Path(sample_file)\n    def _load(self) -> list[EmailSummary]:\n        if not self.path.is_file():\n            log.error(\"demo_mailbox_missing_file\", path=str(self.path))\n            return []\n        raw = json.loads(self.path.read_text(encoding=\"utf-8\"))\n        items = raw.get(\"messages\", raw) if isinstance(raw, dict) else raw",
+        "detail": "src.mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "ImapMailbox",
+        "kind": 6,
+        "importPath": "src.mail_a2a.providers.mailbox",
+        "description": "src.mail_a2a.providers.mailbox",
+        "peekOfCode": "class ImapMailbox(Mailbox):\n    \"\"\"Real IMAP mailbox. Reads with BODY.PEEK so scanning never marks mail read.\"\"\"\n    def __init__(self, settings: MailboxSettings) -> None:\n        self.settings = settings\n        self._conn: imaplib.IMAP4 | None = None\n    # -- connection ----------------------------------------------------------\n    def connect(self) -> imaplib.IMAP4:\n        if self._conn is not None:\n            return self._conn\n        cfg = self.settings",
+        "detail": "src.mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "build_mailbox",
+        "kind": 2,
+        "importPath": "src.mail_a2a.providers.mailbox",
+        "description": "src.mail_a2a.providers.mailbox",
+        "peekOfCode": "def build_mailbox(settings: MailboxSettings) -> Mailbox:\n    if settings.provider == \"demo\":\n        return DemoMailbox(settings.sample_file)\n    return ImapMailbox(settings)",
+        "detail": "src.mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.providers.mailbox",
+        "description": "src.mail_a2a.providers.mailbox",
+        "peekOfCode": "log = get_logger(__name__)\nSNIPPET_CHARS = 600\n_WHITESPACE = re.compile(r\"\\s+\")\ndef _decode(raw: str | None) -> str:\n    \"\"\"Decode an RFC 2047 encoded header into plain text.\"\"\"\n    if not raw:\n        return \"\"\n    try:\n        return str(make_header(decode_header(raw))).strip()\n    except Exception:",
+        "detail": "src.mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "SNIPPET_CHARS",
+        "kind": 5,
+        "importPath": "src.mail_a2a.providers.mailbox",
+        "description": "src.mail_a2a.providers.mailbox",
+        "peekOfCode": "SNIPPET_CHARS = 600\n_WHITESPACE = re.compile(r\"\\s+\")\ndef _decode(raw: str | None) -> str:\n    \"\"\"Decode an RFC 2047 encoded header into plain text.\"\"\"\n    if not raw:\n        return \"\"\n    try:\n        return str(make_header(decode_header(raw))).strip()\n    except Exception:\n        return raw.strip()",
+        "detail": "src.mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "_WHITESPACE",
+        "kind": 5,
+        "importPath": "src.mail_a2a.providers.mailbox",
+        "description": "src.mail_a2a.providers.mailbox",
+        "peekOfCode": "_WHITESPACE = re.compile(r\"\\s+\")\ndef _decode(raw: str | None) -> str:\n    \"\"\"Decode an RFC 2047 encoded header into plain text.\"\"\"\n    if not raw:\n        return \"\"\n    try:\n        return str(make_header(decode_header(raw))).strip()\n    except Exception:\n        return raw.strip()\ndef _body_text(message: Message) -> str:",
+        "detail": "src.mail_a2a.providers.mailbox",
+        "documentation": {}
+    },
+    {
+        "label": "acquire_access_token",
+        "kind": 2,
+        "importPath": "src.mail_a2a.providers.msal_auth",
+        "description": "src.mail_a2a.providers.msal_auth",
+        "peekOfCode": "def acquire_access_token(settings: MailboxSettings) -> str:\n    \"\"\"Return a bearer token for IMAP, prompting for device login if needed.\"\"\"\n    import msal\n    if not settings.oauth_client_id:\n        raise RuntimeError(\n            \"mailbox.auth is 'oauth2' but mailbox.oauth_client_id is empty. \"\n            \"Register an app in Microsoft Entra ID with the delegated \"\n            \"IMAP.AccessAsUser.All permission and put its client id in the config.\"\n        )\n    cache_path = Path(settings.oauth_token_cache)",
+        "detail": "src.mail_a2a.providers.msal_auth",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.providers.msal_auth",
+        "description": "src.mail_a2a.providers.msal_auth",
+        "peekOfCode": "log = get_logger(__name__)\nIMAP_SCOPES = [\"https://outlook.office.com/IMAP.AccessAsUser.All\"]\ndef _load_cache(path: Path):\n    import msal\n    cache = msal.SerializableTokenCache()\n    if path.is_file():\n        try:\n            cache.deserialize(path.read_text(encoding=\"utf-8\"))\n        except (OSError, json.JSONDecodeError) as exc:\n            log.warning(\"msal_cache_unreadable\", path=str(path), error=str(exc))",
+        "detail": "src.mail_a2a.providers.msal_auth",
+        "documentation": {}
+    },
+    {
+        "label": "IMAP_SCOPES",
+        "kind": 5,
+        "importPath": "src.mail_a2a.providers.msal_auth",
+        "description": "src.mail_a2a.providers.msal_auth",
+        "peekOfCode": "IMAP_SCOPES = [\"https://outlook.office.com/IMAP.AccessAsUser.All\"]\ndef _load_cache(path: Path):\n    import msal\n    cache = msal.SerializableTokenCache()\n    if path.is_file():\n        try:\n            cache.deserialize(path.read_text(encoding=\"utf-8\"))\n        except (OSError, json.JSONDecodeError) as exc:\n            log.warning(\"msal_cache_unreadable\", path=str(path), error=str(exc))\n    return cache",
+        "detail": "src.mail_a2a.providers.msal_auth",
+        "documentation": {}
+    },
+    {
+        "label": "WhatsAppChannel",
+        "kind": 6,
+        "importPath": "src.mail_a2a.providers.whatsapp",
+        "description": "src.mail_a2a.providers.whatsapp",
+        "peekOfCode": "class WhatsAppChannel(ABC):\n    name: str = \"unknown\"\n    @abstractmethod\n    async def send(self, to: str, text: str, *, priority: bool = False) -> dict[str, Any]:\n        \"\"\"Deliver `text` to `to`. Returns {ok, message_id, error, ...}.\"\"\"\n    async def verify(self) -> dict[str, Any]:\n        \"\"\"Check credentials before a scan spends time on inference.\"\"\"\n        return {\"ok\": True, \"provider\": self.name}\n    def describe(self) -> dict[str, Any]:\n        return {\"provider\": self.name}",
+        "detail": "src.mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "ConsoleChannel",
+        "kind": 6,
+        "importPath": "src.mail_a2a.providers.whatsapp",
+        "description": "src.mail_a2a.providers.whatsapp",
+        "peekOfCode": "class ConsoleChannel(WhatsAppChannel):\n    \"\"\"Dry-run channel: records what would have been sent.\"\"\"\n    name = \"console\"\n    async def send(self, to: str, text: str, *, priority: bool = False) -> dict[str, Any]:\n        banner = \"TOP PRIORITY \" if priority else \"\"\n        log.info(\n            \"whatsapp_console_send\",\n            to=to,\n            priority=priority,\n            text=text,",
+        "detail": "src.mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "MetaCloudChannel",
+        "kind": 6,
+        "importPath": "src.mail_a2a.providers.whatsapp",
+        "description": "src.mail_a2a.providers.whatsapp",
+        "peekOfCode": "class MetaCloudChannel(WhatsAppChannel):\n    \"\"\"WhatsApp Cloud API.\n    Note the 24-hour rule: free-form `text` messages are only delivered if the\n    recipient messaged the business in the last 24h. Outside that window Meta\n    requires an approved template, hence `message_mode: template`.\n    \"\"\"\n    name = \"meta\"\n    def __init__(self, settings: WhatsAppSettings) -> None:\n        self.cfg = settings.meta\n        if not self.cfg.access_token or not self.cfg.phone_number_id:",
+        "detail": "src.mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "TwilioChannel",
+        "kind": 6,
+        "importPath": "src.mail_a2a.providers.whatsapp",
+        "description": "src.mail_a2a.providers.whatsapp",
+        "peekOfCode": "class TwilioChannel(WhatsAppChannel):\n    \"\"\"Twilio WhatsApp API over its REST endpoint (no SDK dependency needed).\"\"\"\n    name = \"twilio\"\n    def __init__(self, settings: WhatsAppSettings) -> None:\n        self.cfg = settings.twilio\n        if not self.cfg.account_sid or not self.cfg.auth_token:\n            raise RuntimeError(\n                \"whatsapp.provider is 'twilio' but twilio.account_sid / twilio.auth_token \"\n                \"are empty. Fill them in config/config.yaml or set \"\n                \"TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN.\"",
+        "detail": "src.mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_number",
+        "kind": 2,
+        "importPath": "src.mail_a2a.providers.whatsapp",
+        "description": "src.mail_a2a.providers.whatsapp",
+        "peekOfCode": "def normalize_number(number: str) -> str:\n    \"\"\"WhatsApp wants digits only, in international format, with no leading '+'.\"\"\"\n    return _NON_DIGITS.sub(\"\", number or \"\")\ndef _json_or_empty(response: httpx.Response) -> dict[str, Any]:\n    try:\n        body = response.json()\n        return body if isinstance(body, dict) else {}\n    except ValueError:\n        return {}\ndef explain_error(body: dict[str, Any]) -> str:",
+        "detail": "src.mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "explain_error",
+        "kind": 2,
+        "importPath": "src.mail_a2a.providers.whatsapp",
+        "description": "src.mail_a2a.providers.whatsapp",
+        "peekOfCode": "def explain_error(body: dict[str, Any]) -> str:\n    \"\"\"Turn a provider error body into an actionable hint, where we know one.\"\"\"\n    error = body.get(\"error\") or {}\n    code = error.get(\"code\")\n    subcode = error.get(\"error_subcode\")\n    if code == 190:\n        detail = error.get(\"message\", \"\")\n        if subcode == 463 or \"expired\" in detail.lower():\n            return (\n                \"the Meta access token has expired. Temporary tokens from the Meta \"",
+        "detail": "src.mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "build_channel",
+        "kind": 2,
+        "importPath": "src.mail_a2a.providers.whatsapp",
+        "description": "src.mail_a2a.providers.whatsapp",
+        "peekOfCode": "def build_channel(settings: WhatsAppSettings) -> WhatsAppChannel:\n    if settings.provider == \"meta\":\n        return MetaCloudChannel(settings)\n    if settings.provider == \"twilio\":\n        return TwilioChannel(settings)\n    return ConsoleChannel()",
+        "detail": "src.mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.providers.whatsapp",
+        "description": "src.mail_a2a.providers.whatsapp",
+        "peekOfCode": "log = get_logger(__name__)\n_NON_DIGITS = re.compile(r\"\\D\")\ndef normalize_number(number: str) -> str:\n    \"\"\"WhatsApp wants digits only, in international format, with no leading '+'.\"\"\"\n    return _NON_DIGITS.sub(\"\", number or \"\")\ndef _json_or_empty(response: httpx.Response) -> dict[str, Any]:\n    try:\n        body = response.json()\n        return body if isinstance(body, dict) else {}\n    except ValueError:",
+        "detail": "src.mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "_NON_DIGITS",
+        "kind": 5,
+        "importPath": "src.mail_a2a.providers.whatsapp",
+        "description": "src.mail_a2a.providers.whatsapp",
+        "peekOfCode": "_NON_DIGITS = re.compile(r\"\\D\")\ndef normalize_number(number: str) -> str:\n    \"\"\"WhatsApp wants digits only, in international format, with no leading '+'.\"\"\"\n    return _NON_DIGITS.sub(\"\", number or \"\")\ndef _json_or_empty(response: httpx.Response) -> dict[str, Any]:\n    try:\n        body = response.json()\n        return body if isinstance(body, dict) else {}\n    except ValueError:\n        return {}",
+        "detail": "src.mail_a2a.providers.whatsapp",
+        "documentation": {}
+    },
+    {
+        "label": "build_agent_card",
+        "kind": 2,
+        "importPath": "src.mail_a2a.a2a_common",
+        "description": "src.mail_a2a.a2a_common",
+        "peekOfCode": "def build_agent_card(\n    *,\n    name: str,\n    description: str,\n    url: str,\n    skills: list[AgentSkill],\n    version: str = \"1.0.0\",\n) -> AgentCard:\n    \"\"\"An A2A Agent Card describing what this agent can do and how to reach it.\"\"\"\n    return AgentCard(",
+        "detail": "src.mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "build_app",
+        "kind": 2,
+        "importPath": "src.mail_a2a.a2a_common",
+        "description": "src.mail_a2a.a2a_common",
+        "peekOfCode": "def build_app(card: AgentCard, executor: AgentExecutor) -> Starlette:\n    \"\"\"Starlette app serving the agent card plus the A2A JSON-RPC endpoint.\"\"\"\n    handler = DefaultRequestHandler(\n        agent_executor=executor,\n        task_store=InMemoryTaskStore(),\n        agent_card=card,\n    )\n    routes = [*create_agent_card_routes(card), *create_jsonrpc_routes(handler, \"/\")]\n    log.info(\n        \"a2a_server_ready\",",
+        "detail": "src.mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "request_text",
+        "kind": 2,
+        "importPath": "src.mail_a2a.a2a_common",
+        "description": "src.mail_a2a.a2a_common",
+        "peekOfCode": "def request_text(context: RequestContext) -> str:\n    try:\n        return (get_message_text(context.message) or \"\").strip()\n    except Exception:  # pragma: no cover - defensive\n        return \"\"\ndef parse_json(text: str) -> dict[str, Any]:\n    \"\"\"Parse a JSON object out of an A2A text part, tolerating surrounding prose.\"\"\"\n    text = (text or \"\").strip()\n    if not text:\n        return {}",
+        "detail": "src.mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "parse_json",
+        "kind": 2,
+        "importPath": "src.mail_a2a.a2a_common",
+        "description": "src.mail_a2a.a2a_common",
+        "peekOfCode": "def parse_json(text: str) -> dict[str, Any]:\n    \"\"\"Parse a JSON object out of an A2A text part, tolerating surrounding prose.\"\"\"\n    text = (text or \"\").strip()\n    if not text:\n        return {}\n    try:\n        parsed = json.loads(text)\n        return parsed if isinstance(parsed, dict) else {}\n    except json.JSONDecodeError:\n        start, end = text.find(\"{\"), text.rfind(\"}\")",
+        "detail": "src.mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "result_texts",
+        "kind": 2,
+        "importPath": "src.mail_a2a.a2a_common",
+        "description": "src.mail_a2a.a2a_common",
+        "peekOfCode": "def result_texts(event: Any) -> list[str]:\n    \"\"\"Text of the *result* parts of one A2A stream response.\n    Only artifacts and status messages are read. A completed Task also carries\n    `history`, which echoes the request we just sent — including that would make\n    a caller parse its own payload back as the peer's answer.\n    \"\"\"\n    sink: list[str] = []\n    if _has(event, \"task\"):\n        task = event.task\n        for artifact in task.artifacts:",
+        "detail": "src.mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.a2a_common",
+        "description": "src.mail_a2a.a2a_common",
+        "peekOfCode": "log = get_logger(__name__)\nPROTOCOL_BINDING = \"JSONRPC\"\ndef build_agent_card(\n    *,\n    name: str,\n    description: str,\n    url: str,\n    skills: list[AgentSkill],\n    version: str = \"1.0.0\",\n) -> AgentCard:",
+        "detail": "src.mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "PROTOCOL_BINDING",
+        "kind": 5,
+        "importPath": "src.mail_a2a.a2a_common",
+        "description": "src.mail_a2a.a2a_common",
+        "peekOfCode": "PROTOCOL_BINDING = \"JSONRPC\"\ndef build_agent_card(\n    *,\n    name: str,\n    description: str,\n    url: str,\n    skills: list[AgentSkill],\n    version: str = \"1.0.0\",\n) -> AgentCard:\n    \"\"\"An A2A Agent Card describing what this agent can do and how to reach it.\"\"\"",
+        "detail": "src.mail_a2a.a2a_common",
+        "documentation": {}
+    },
+    {
+        "label": "MailboxSettings",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class MailboxSettings(BaseModel):\n    provider: Literal[\"imap\", \"demo\"] = \"demo\"\n    host: str = \"outlook.office365.com\"\n    port: int = 993\n    username: str = \"\"\n    password: str = \"\"\n    auth: Literal[\"password\", \"oauth2\"] = \"password\"\n    ssl: bool = True\n    folder: str = \"INBOX\"\n    unread_only: bool = True",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "MetaWhatsAppSettings",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class MetaWhatsAppSettings(BaseModel):\n    access_token: str = \"\"\n    phone_number_id: str = \"\"\n    api_version: str = \"v21.0\"\n    message_mode: Literal[\"text\", \"template\"] = \"text\"\n    template_name: str = \"email_alert\"\n    template_language: str = \"en\"\nclass TwilioWhatsAppSettings(BaseModel):\n    account_sid: str = \"\"\n    auth_token: str = \"\"",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "TwilioWhatsAppSettings",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class TwilioWhatsAppSettings(BaseModel):\n    account_sid: str = \"\"\n    auth_token: str = \"\"\n    from_number: str = \"whatsapp:+14155238886\"\nclass WhatsAppSettings(BaseModel):\n    provider: Literal[\"console\", \"meta\", \"twilio\"] = \"console\"\n    to: str = \"\"\n    meta: MetaWhatsAppSettings = Field(default_factory=MetaWhatsAppSettings)\n    twilio: TwilioWhatsAppSettings = Field(default_factory=TwilioWhatsAppSettings)\nclass OllamaSettings(BaseModel):",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "WhatsAppSettings",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class WhatsAppSettings(BaseModel):\n    provider: Literal[\"console\", \"meta\", \"twilio\"] = \"console\"\n    to: str = \"\"\n    meta: MetaWhatsAppSettings = Field(default_factory=MetaWhatsAppSettings)\n    twilio: TwilioWhatsAppSettings = Field(default_factory=TwilioWhatsAppSettings)\nclass OllamaSettings(BaseModel):\n    base_url: str = \"http://localhost:11434\"\n    model: str = \"deepseek-r1:1.5b\"\n    timeout_seconds: int = 180\n    temperature: float = 0.2",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaSettings",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class OllamaSettings(BaseModel):\n    base_url: str = \"http://localhost:11434\"\n    model: str = \"deepseek-r1:1.5b\"\n    timeout_seconds: int = 180\n    temperature: float = 0.2\n    # DeepSeek R1 is a reasoning model; leaving `think` on empties message.content.\n    think: bool = False\n    required: bool = False\nclass AgentEndpoint(BaseModel):\n    host: str = \"127.0.0.1\"",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "AgentEndpoint",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class AgentEndpoint(BaseModel):\n    host: str = \"127.0.0.1\"\n    port: int = 9101\n    @property\n    def url(self) -> str:\n        return f\"http://{self.host}:{self.port}\"\nclass AgentsSettings(BaseModel):\n    mailbox: AgentEndpoint = Field(default_factory=lambda: AgentEndpoint(port=9101))\n    whatsapp: AgentEndpoint = Field(default_factory=lambda: AgentEndpoint(port=9102))\nclass LoggingSettings(BaseModel):",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "AgentsSettings",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class AgentsSettings(BaseModel):\n    mailbox: AgentEndpoint = Field(default_factory=lambda: AgentEndpoint(port=9101))\n    whatsapp: AgentEndpoint = Field(default_factory=lambda: AgentEndpoint(port=9102))\nclass LoggingSettings(BaseModel):\n    level: str = \"INFO\"\n    file: str = \"logs/agents.log\"\nclass Settings(BaseModel):\n    mailbox: MailboxSettings = Field(default_factory=MailboxSettings)\n    whatsapp: WhatsAppSettings = Field(default_factory=WhatsAppSettings)\n    ollama: OllamaSettings = Field(default_factory=OllamaSettings)",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "LoggingSettings",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class LoggingSettings(BaseModel):\n    level: str = \"INFO\"\n    file: str = \"logs/agents.log\"\nclass Settings(BaseModel):\n    mailbox: MailboxSettings = Field(default_factory=MailboxSettings)\n    whatsapp: WhatsAppSettings = Field(default_factory=WhatsAppSettings)\n    ollama: OllamaSettings = Field(default_factory=OllamaSettings)\n    agents: AgentsSettings = Field(default_factory=AgentsSettings)\n    logging: LoggingSettings = Field(default_factory=LoggingSettings)\n    priority_keywords: list[str] = Field(",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class Settings(BaseModel):\n    mailbox: MailboxSettings = Field(default_factory=MailboxSettings)\n    whatsapp: WhatsAppSettings = Field(default_factory=WhatsAppSettings)\n    ollama: OllamaSettings = Field(default_factory=OllamaSettings)\n    agents: AgentsSettings = Field(default_factory=AgentsSettings)\n    logging: LoggingSettings = Field(default_factory=LoggingSettings)\n    priority_keywords: list[str] = Field(\n        default_factory=lambda: [\"job\", \"opportunity\", \"opening\", \"position\"]\n    )\n    max_emails: int = 10",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigError",
+        "kind": 6,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "class ConfigError(ValueError):\n    \"\"\"A config file that cannot be parsed or validated, with a readable message.\"\"\"\ndef _format_yaml_error(path: Path, text: str, exc: yaml.YAMLError) -> str:\n    \"\"\"Point at the offending line instead of dumping a parser traceback.\"\"\"\n    mark = getattr(exc, \"problem_mark\", None)\n    problem = getattr(exc, \"problem\", None) or \"invalid YAML\"\n    if mark is None:\n        return f\"{path}: {problem}\"\n    lines = text.splitlines()\n    excerpt = \"\"",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "config_path",
+        "kind": 2,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "def config_path() -> Path:\n    return Path(os.environ.get(CONFIG_PATH_ENV) or DEFAULT_CONFIG_PATH)\ndef load_settings(path: Path | str | None = None) -> Settings:\n    \"\"\"Read YAML (if present), layer env overrides on top, validate.\"\"\"\n    target = Path(path) if path else config_path()\n    raw: dict[str, Any] = {}\n    if target.is_file():\n        text = target.read_text(encoding=\"utf-8\")\n        try:\n            loaded = yaml.safe_load(text) or {}",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "load_settings",
+        "kind": 2,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "def load_settings(path: Path | str | None = None) -> Settings:\n    \"\"\"Read YAML (if present), layer env overrides on top, validate.\"\"\"\n    target = Path(path) if path else config_path()\n    raw: dict[str, Any] = {}\n    if target.is_file():\n        text = target.read_text(encoding=\"utf-8\")\n        try:\n            loaded = yaml.safe_load(text) or {}\n        except yaml.YAMLError as exc:\n            raise ConfigError(_format_yaml_error(target, text, exc)) from None",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_settings",
+        "kind": 2,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "def get_settings() -> Settings:\n    return load_settings()\ndef clear_settings_cache() -> None:\n    get_settings.cache_clear()",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "clear_settings_cache",
+        "kind": 2,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "def clear_settings_cache() -> None:\n    get_settings.cache_clear()",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_CONFIG_PATH",
+        "kind": 5,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "DEFAULT_CONFIG_PATH = Path(\"config/config.yaml\")\nCONFIG_PATH_ENV = \"MAIL_A2A_CONFIG\"\nclass MailboxSettings(BaseModel):\n    provider: Literal[\"imap\", \"demo\"] = \"demo\"\n    host: str = \"outlook.office365.com\"\n    port: int = 993\n    username: str = \"\"\n    password: str = \"\"\n    auth: Literal[\"password\", \"oauth2\"] = \"password\"\n    ssl: bool = True",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG_PATH_ENV",
+        "kind": 5,
+        "importPath": "src.mail_a2a.config",
+        "description": "src.mail_a2a.config",
+        "peekOfCode": "CONFIG_PATH_ENV = \"MAIL_A2A_CONFIG\"\nclass MailboxSettings(BaseModel):\n    provider: Literal[\"imap\", \"demo\"] = \"demo\"\n    host: str = \"outlook.office365.com\"\n    port: int = 993\n    username: str = \"\"\n    password: str = \"\"\n    auth: Literal[\"password\", \"oauth2\"] = \"password\"\n    ssl: bool = True\n    folder: str = \"INBOX\"",
+        "detail": "src.mail_a2a.config",
+        "documentation": {}
+    },
+    {
+        "label": "redact",
+        "kind": 2,
+        "importPath": "src.mail_a2a.logging_setup",
+        "description": "src.mail_a2a.logging_setup",
+        "peekOfCode": "def redact(value: Any) -> Any:\n    \"\"\"Recursively replace secret-looking values so they never reach a log sink.\"\"\"\n    if isinstance(value, dict):\n        out: dict[str, Any] = {}\n        for key, item in value.items():\n            if any(hint in str(key).lower() for hint in _SECRET_HINTS):\n                out[key] = \"***\" if item else \"\"\n            else:\n                out[key] = redact(item)\n        return out",
+        "detail": "src.mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "configure_logging",
+        "kind": 2,
+        "importPath": "src.mail_a2a.logging_setup",
+        "description": "src.mail_a2a.logging_setup",
+        "peekOfCode": "def configure_logging(\n    level: str = \"INFO\",\n    log_file: Path | str | None = None,\n    *,\n    stream: TextIO | None = None,\n) -> None:\n    \"\"\"Wire structlog + stdlib logging to the console and (optionally) a file.\"\"\"\n    numeric_level = getattr(logging, str(level).upper(), logging.INFO)\n    shared_processors = [\n        structlog.contextvars.merge_contextvars,",
+        "detail": "src.mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "configure_stdio_server_logging",
+        "kind": 2,
+        "importPath": "src.mail_a2a.logging_setup",
+        "description": "src.mail_a2a.logging_setup",
+        "peekOfCode": "def configure_stdio_server_logging(level: str = \"INFO\", log_file: Path | str | None = None) -> None:\n    \"\"\"Logging for MCP stdio servers.\n    stdout carries the MCP protocol framing, so anything we print there would\n    corrupt the session. Console logs go to stderr instead.\n    \"\"\"\n    configure_logging(level=level, log_file=log_file, stream=sys.stderr)\ndef get_logger(name: str) -> structlog.stdlib.BoundLogger:\n    return structlog.get_logger(name)\ndef log_file_from_env() -> str | None:\n    \"\"\"MCP servers are spawned as subprocesses and inherit the log target here.\"\"\"",
+        "detail": "src.mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "kind": 2,
+        "importPath": "src.mail_a2a.logging_setup",
+        "description": "src.mail_a2a.logging_setup",
+        "peekOfCode": "def get_logger(name: str) -> structlog.stdlib.BoundLogger:\n    return structlog.get_logger(name)\ndef log_file_from_env() -> str | None:\n    \"\"\"MCP servers are spawned as subprocesses and inherit the log target here.\"\"\"\n    return os.environ.get(\"MAIL_A2A_LOG_FILE\") or None",
+        "detail": "src.mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "log_file_from_env",
+        "kind": 2,
+        "importPath": "src.mail_a2a.logging_setup",
+        "description": "src.mail_a2a.logging_setup",
+        "peekOfCode": "def log_file_from_env() -> str | None:\n    \"\"\"MCP servers are spawned as subprocesses and inherit the log target here.\"\"\"\n    return os.environ.get(\"MAIL_A2A_LOG_FILE\") or None",
+        "detail": "src.mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "_SECRET_HINTS",
+        "kind": 5,
+        "importPath": "src.mail_a2a.logging_setup",
+        "description": "src.mail_a2a.logging_setup",
+        "peekOfCode": "_SECRET_HINTS = (\"password\", \"token\", \"secret\", \"auth_token\", \"authorization\", \"sid\", \"api_key\")\ndef redact(value: Any) -> Any:\n    \"\"\"Recursively replace secret-looking values so they never reach a log sink.\"\"\"\n    if isinstance(value, dict):\n        out: dict[str, Any] = {}\n        for key, item in value.items():\n            if any(hint in str(key).lower() for hint in _SECRET_HINTS):\n                out[key] = \"***\" if item else \"\"\n            else:\n                out[key] = redact(item)",
+        "detail": "src.mail_a2a.logging_setup",
+        "documentation": {}
+    },
+    {
+        "label": "LoggedMcpClient",
+        "kind": 6,
+        "importPath": "src.mail_a2a.mcp_client",
+        "description": "src.mail_a2a.mcp_client",
+        "peekOfCode": "class LoggedMcpClient:\n    \"\"\"Wraps an MCP session and records each call with timing and outcome.\"\"\"\n    def __init__(self, server_name: str, client: Client) -> None:\n        self.server_name = server_name\n        self._client = client\n    async def list_tools(self) -> list[str]:\n        result = await self._client.list_tools()\n        names = [tool.name for tool in result.tools]\n        log.info(\"mcp_tools_discovered\", server=self.server_name, tools=names)\n        return names",
+        "detail": "src.mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "open_email_mcp",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_client",
+        "description": "src.mail_a2a.mcp_client",
+        "peekOfCode": "def open_email_mcp() -> Any:\n    return open_mcp(\"email-mcp\", EMAIL_SERVER_MODULE)\ndef open_whatsapp_mcp() -> Any:\n    return open_mcp(\"whatsapp-mcp\", WHATSAPP_SERVER_MODULE)",
+        "detail": "src.mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "open_whatsapp_mcp",
+        "kind": 2,
+        "importPath": "src.mail_a2a.mcp_client",
+        "description": "src.mail_a2a.mcp_client",
+        "peekOfCode": "def open_whatsapp_mcp() -> Any:\n    return open_mcp(\"whatsapp-mcp\", WHATSAPP_SERVER_MODULE)",
+        "detail": "src.mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.mcp_client",
+        "description": "src.mail_a2a.mcp_client",
+        "peekOfCode": "log = get_logger(__name__)\nEMAIL_SERVER_MODULE = \"mail_a2a.mcp_servers.email_mcp\"\nWHATSAPP_SERVER_MODULE = \"mail_a2a.mcp_servers.whatsapp_mcp\"\ndef _result_text(result: Any) -> str:\n    chunks = [\n        block.text\n        for block in (getattr(result, \"content\", None) or [])\n        if getattr(block, \"text\", None)\n    ]\n    return \"\\n\".join(chunks)",
+        "detail": "src.mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_SERVER_MODULE",
+        "kind": 5,
+        "importPath": "src.mail_a2a.mcp_client",
+        "description": "src.mail_a2a.mcp_client",
+        "peekOfCode": "EMAIL_SERVER_MODULE = \"mail_a2a.mcp_servers.email_mcp\"\nWHATSAPP_SERVER_MODULE = \"mail_a2a.mcp_servers.whatsapp_mcp\"\ndef _result_text(result: Any) -> str:\n    chunks = [\n        block.text\n        for block in (getattr(result, \"content\", None) or [])\n        if getattr(block, \"text\", None)\n    ]\n    return \"\\n\".join(chunks)\ndef _result_payload(result: Any) -> Any:",
+        "detail": "src.mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "WHATSAPP_SERVER_MODULE",
+        "kind": 5,
+        "importPath": "src.mail_a2a.mcp_client",
+        "description": "src.mail_a2a.mcp_client",
+        "peekOfCode": "WHATSAPP_SERVER_MODULE = \"mail_a2a.mcp_servers.whatsapp_mcp\"\ndef _result_text(result: Any) -> str:\n    chunks = [\n        block.text\n        for block in (getattr(result, \"content\", None) or [])\n        if getattr(block, \"text\", None)\n    ]\n    return \"\\n\".join(chunks)\ndef _result_payload(result: Any) -> Any:\n    \"\"\"Prefer the structured output; fall back to parsing the text content.\"\"\"",
+        "detail": "src.mail_a2a.mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "EmailSummary",
+        "kind": 6,
+        "importPath": "src.mail_a2a.models",
+        "description": "src.mail_a2a.models",
+        "peekOfCode": "class EmailSummary(BaseModel):\n    \"\"\"One mailbox message as returned by the email MCP server.\"\"\"\n    uid: str\n    sender: str = \"\"\n    sender_email: str = \"\"\n    subject: str = \"(no subject)\"\n    received_at: str = \"\"\n    snippet: str = \"\"\n    unread: bool = True\nclass ScanRequest(BaseModel):",
+        "detail": "src.mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "ScanRequest",
+        "kind": 6,
+        "importPath": "src.mail_a2a.models",
+        "description": "src.mail_a2a.models",
+        "peekOfCode": "class ScanRequest(BaseModel):\n    \"\"\"Runner -> mailbox agent (A2A).\"\"\"\n    action: str = \"scan_and_notify\"\n    max_emails: int = 10\n    unread_only: bool = True\nclass NotifyRequest(BaseModel):\n    \"\"\"Mailbox agent -> WhatsApp agent (A2A).\n    `priority` is decided by the mailbox agent using the configured keywords, so\n    the notifier never has to re-derive it.\n    \"\"\"",
+        "detail": "src.mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotifyRequest",
+        "kind": 6,
+        "importPath": "src.mail_a2a.models",
+        "description": "src.mail_a2a.models",
+        "peekOfCode": "class NotifyRequest(BaseModel):\n    \"\"\"Mailbox agent -> WhatsApp agent (A2A).\n    `priority` is decided by the mailbox agent using the configured keywords, so\n    the notifier never has to re-derive it.\n    \"\"\"\n    uid: str\n    sender: str\n    subject: str\n    priority: bool = False\n    matched_keywords: list[str] = Field(default_factory=list)",
+        "detail": "src.mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotifyResult",
+        "kind": 6,
+        "importPath": "src.mail_a2a.models",
+        "description": "src.mail_a2a.models",
+        "peekOfCode": "class NotifyResult(BaseModel):\n    \"\"\"WhatsApp agent -> mailbox agent (A2A).\"\"\"\n    uid: str = \"\"\n    ok: bool = False\n    provider: str = \"\"\n    to: str = \"\"\n    message_id: str = \"\"\n    text: str = \"\"\n    error: str = \"\"\nclass ScanResult(BaseModel):",
+        "detail": "src.mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "ScanResult",
+        "kind": 6,
+        "importPath": "src.mail_a2a.models",
+        "description": "src.mail_a2a.models",
+        "peekOfCode": "class ScanResult(BaseModel):\n    \"\"\"Mailbox agent -> runner (A2A).\"\"\"\n    scanned: int = 0\n    new: int = 0\n    notified: int = 0\n    failed: int = 0\n    priority: int = 0\n    results: list[NotifyResult] = Field(default_factory=list)\n    error: str = \"\"\n    def as_dict(self) -> dict[str, Any]:",
+        "detail": "src.mail_a2a.models",
+        "documentation": {}
+    },
+    {
+        "label": "match_keywords",
+        "kind": 2,
+        "importPath": "src.mail_a2a.priority",
+        "description": "src.mail_a2a.priority",
+        "peekOfCode": "def match_keywords(text: str, keywords: list[str] | tuple[str, ...] | None = None) -> list[str]:\n    \"\"\"Return the configured keywords present in `text`, in config order.\"\"\"\n    words = tuple(keywords) if keywords else DEFAULT_KEYWORDS\n    if not text or not any(w.strip() for w in words):\n        return []\n    hits = {hit.group(1).lower() for hit in _pattern(words).finditer(text)}\n    return [word for word in words if word.lower() in hits]\ndef evaluate(\n    subject: str,\n    body: str = \"\",",
+        "detail": "src.mail_a2a.priority",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate",
+        "kind": 2,
+        "importPath": "src.mail_a2a.priority",
+        "description": "src.mail_a2a.priority",
+        "peekOfCode": "def evaluate(\n    subject: str,\n    body: str = \"\",\n    keywords: list[str] | tuple[str, ...] | None = None,\n) -> tuple[bool, list[str]]:\n    \"\"\"(is_top_priority, matched_keywords) for an email's subject + body.\"\"\"\n    matched = match_keywords(f\"{subject}\\n{body}\", keywords)\n    return bool(matched), matched",
+        "detail": "src.mail_a2a.priority",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_KEYWORDS",
+        "kind": 5,
+        "importPath": "src.mail_a2a.priority",
+        "description": "src.mail_a2a.priority",
+        "peekOfCode": "DEFAULT_KEYWORDS = (\"job\", \"opportunity\", \"opening\", \"position\")\n@lru_cache(maxsize=32)\ndef _pattern(keywords: tuple[str, ...]) -> re.Pattern[str]:\n    # \\b keeps \"position\" from firing on \"repositioning\"; plural/possessive\n    # suffixes still match so \"openings\" and \"job's\" are caught.\n    alternatives = \"|\".join(re.escape(word.strip()) for word in keywords if word.strip())\n    return re.compile(rf\"\\b({alternatives})(?:s|es|'s)?\\b\", re.IGNORECASE)\ndef match_keywords(text: str, keywords: list[str] | tuple[str, ...] | None = None) -> list[str]:\n    \"\"\"Return the configured keywords present in `text`, in config order.\"\"\"\n    words = tuple(keywords) if keywords else DEFAULT_KEYWORDS",
+        "detail": "src.mail_a2a.priority",
+        "documentation": {}
+    },
+    {
+        "label": "build_parser",
+        "kind": 2,
+        "importPath": "src.mail_a2a.runner",
+        "description": "src.mail_a2a.runner",
+        "peekOfCode": "def build_parser() -> argparse.ArgumentParser:\n    parser = argparse.ArgumentParser(\n        prog=\"mail-a2a\",\n        description=\"Two-agent A2A mailbox-to-WhatsApp notifier running on DeepSeek R1 1.5B.\",\n    )\n    parser.add_argument(\"--config\", help=\"path to config.yaml (default: config/config.yaml)\")\n    mode = parser.add_mutually_exclusive_group()\n    mode.add_argument(\"--watch\", action=\"store_true\", help=\"scan repeatedly on the poll interval\")\n    mode.add_argument(\"--serve\", action=\"store_true\", help=\"run the agents without scanning\")\n    mode.add_argument(\"--check\", action=\"store_true\", help=\"health-check the dependencies and exit\")",
+        "detail": "src.mail_a2a.runner",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.mail_a2a.runner",
+        "description": "src.mail_a2a.runner",
+        "peekOfCode": "def main() -> None:\n    args = build_parser().parse_args()\n    try:\n        sys.exit(asyncio.run(main_async(args)))\n    except ConfigError as exc:\n        # Logging may not be configured yet, and a parser traceback helps nobody.\n        print(f\"\\nConfiguration error:\\n{exc}\\n\", file=sys.stderr)\n        sys.exit(2)\n    except KeyboardInterrupt:\n        log.info(\"interrupted\")",
+        "detail": "src.mail_a2a.runner",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.runner",
+        "description": "src.mail_a2a.runner",
+        "peekOfCode": "log = get_logger(__name__)\nAGENT_CARD_PATH = \"/.well-known/agent-card.json\"\nasync def _serve(app, host: str, port: int, name: str) -> uvicorn.Server:\n    config = uvicorn.Config(app, host=host, port=port, log_config=None, access_log=False)\n    server = uvicorn.Server(config)\n    asyncio.get_running_loop().create_task(server.serve(), name=f\"uvicorn-{name}\")\n    return server\nasync def _await_card(url: str, name: str, timeout: float = 20.0) -> None:\n    \"\"\"Block until the agent's card is being served.\"\"\"\n    deadline = asyncio.get_running_loop().time() + timeout",
+        "detail": "src.mail_a2a.runner",
+        "documentation": {}
+    },
+    {
+        "label": "AGENT_CARD_PATH",
+        "kind": 5,
+        "importPath": "src.mail_a2a.runner",
+        "description": "src.mail_a2a.runner",
+        "peekOfCode": "AGENT_CARD_PATH = \"/.well-known/agent-card.json\"\nasync def _serve(app, host: str, port: int, name: str) -> uvicorn.Server:\n    config = uvicorn.Config(app, host=host, port=port, log_config=None, access_log=False)\n    server = uvicorn.Server(config)\n    asyncio.get_running_loop().create_task(server.serve(), name=f\"uvicorn-{name}\")\n    return server\nasync def _await_card(url: str, name: str, timeout: float = 20.0) -> None:\n    \"\"\"Block until the agent's card is being served.\"\"\"\n    deadline = asyncio.get_running_loop().time() + timeout\n    async with httpx.AsyncClient(timeout=3) as client:",
+        "detail": "src.mail_a2a.runner",
+        "documentation": {}
+    },
+    {
+        "label": "SeenStore",
+        "kind": 6,
+        "importPath": "src.mail_a2a.state",
+        "description": "src.mail_a2a.state",
+        "peekOfCode": "class SeenStore:\n    \"\"\"A small JSON-backed set of mailbox UIDs that have been notified.\"\"\"\n    def __init__(self, path: Path | str) -> None:\n        self.path = Path(path)\n        self._uids: list[str] = []\n        self._load()\n    def _load(self) -> None:\n        if not self.path.is_file():\n            return\n        try:",
+        "detail": "src.mail_a2a.state",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "src.mail_a2a.state",
+        "description": "src.mail_a2a.state",
+        "peekOfCode": "log = get_logger(__name__)\nMAX_REMEMBERED = 500\nclass SeenStore:\n    \"\"\"A small JSON-backed set of mailbox UIDs that have been notified.\"\"\"\n    def __init__(self, path: Path | str) -> None:\n        self.path = Path(path)\n        self._uids: list[str] = []\n        self._load()\n    def _load(self) -> None:\n        if not self.path.is_file():",
+        "detail": "src.mail_a2a.state",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_REMEMBERED",
+        "kind": 5,
+        "importPath": "src.mail_a2a.state",
+        "description": "src.mail_a2a.state",
+        "peekOfCode": "MAX_REMEMBERED = 500\nclass SeenStore:\n    \"\"\"A small JSON-backed set of mailbox UIDs that have been notified.\"\"\"\n    def __init__(self, path: Path | str) -> None:\n        self.path = Path(path)\n        self._uids: list[str] = []\n        self._load()\n    def _load(self) -> None:\n        if not self.path.is_file():\n            return",
+        "detail": "src.mail_a2a.state",
+        "documentation": {}
+    },
+    {
+        "label": "REPO_ROOT",
+        "kind": 5,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "REPO_ROOT = Path(__file__).resolve().parents[1]\n@pytest.fixture(autouse=True)\ndef _isolated_config(tmp_path, monkeypatch):\n    \"\"\"Never let a test read the developer's real config/config.yaml.\"\"\"\n    monkeypatch.chdir(REPO_ROOT)\n    monkeypatch.setenv(\"MAIL_A2A_CONFIG\", str(tmp_path / \"absent.yaml\"))\n    for key in list(os.environ):\n        if key.startswith((\"MAILBOX_\", \"WHATSAPP_\", \"META_WHATSAPP_\", \"TWILIO_\", \"OLLAMA_\")):\n            monkeypatch.delenv(key, raising=False)\n    from mail_a2a.config import clear_settings_cache",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_defaults_apply_when_file_is_absent",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_defaults_apply_when_file_is_absent(tmp_path):\n    settings = load_settings(tmp_path / \"nope.yaml\")\n    assert settings.mailbox.provider == \"demo\"\n    assert settings.whatsapp.provider == \"console\"\n    assert settings.ollama.model == \"deepseek-r1:1.5b\"\n    assert settings.priority_keywords == [\"job\", \"opportunity\", \"opening\", \"position\"]\ndef test_yaml_values_are_loaded(tmp_path):\n    path = _write(\n        tmp_path,\n        \"\"\"",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "test_yaml_values_are_loaded",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_yaml_values_are_loaded(tmp_path):\n    path = _write(\n        tmp_path,\n        \"\"\"\nmailbox:\n  provider: imap\n  host: imap.gmail.com\n  username: me@gmail.com\n  password: secret\nwhatsapp:",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "test_env_overrides_yaml",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_env_overrides_yaml(tmp_path, monkeypatch):\n    path = _write(tmp_path, \"whatsapp:\\n  to: '111'\\n  provider: console\\n\")\n    monkeypatch.setenv(\"WHATSAPP_TO\", \"999888777\")\n    monkeypatch.setenv(\"META_WHATSAPP_ACCESS_TOKEN\", \"tok\")\n    settings = load_settings(path)\n    assert settings.whatsapp.to == \"999888777\"\n    assert settings.whatsapp.meta.access_token == \"tok\"\ndef test_agent_endpoint_url_is_derived(tmp_path):\n    path = _write(tmp_path, \"agents:\\n  mailbox:\\n    host: 0.0.0.0\\n    port: 8000\\n\")\n    assert load_settings(path).agents.mailbox.url == \"http://0.0.0.0:8000\"",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "test_agent_endpoint_url_is_derived",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_agent_endpoint_url_is_derived(tmp_path):\n    path = _write(tmp_path, \"agents:\\n  mailbox:\\n    host: 0.0.0.0\\n    port: 8000\\n\")\n    assert load_settings(path).agents.mailbox.url == \"http://0.0.0.0:8000\"\ndef test_invalid_provider_is_rejected(tmp_path):\n    path = _write(tmp_path, \"whatsapp:\\n  provider: telegram\\n\")\n    with pytest.raises(ConfigError) as exc:\n        load_settings(path)\n    assert \"whatsapp.provider\" in str(exc.value)\n    assert \"'console', 'meta' or 'twilio'\" in str(exc.value)\ndef test_all_invalid_values_are_listed_at_once(tmp_path):",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "test_invalid_provider_is_rejected",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_invalid_provider_is_rejected(tmp_path):\n    path = _write(tmp_path, \"whatsapp:\\n  provider: telegram\\n\")\n    with pytest.raises(ConfigError) as exc:\n        load_settings(path)\n    assert \"whatsapp.provider\" in str(exc.value)\n    assert \"'console', 'meta' or 'twilio'\" in str(exc.value)\ndef test_all_invalid_values_are_listed_at_once(tmp_path):\n    path = _write(tmp_path, \"whatsapp:\\n  provider: telegram\\nmax_emails: lots\\n\")\n    message = str(pytest.raises(ConfigError, load_settings, path).value)\n    assert \"whatsapp.provider\" in message",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "test_all_invalid_values_are_listed_at_once",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_all_invalid_values_are_listed_at_once(tmp_path):\n    path = _write(tmp_path, \"whatsapp:\\n  provider: telegram\\nmax_emails: lots\\n\")\n    message = str(pytest.raises(ConfigError, load_settings, path).value)\n    assert \"whatsapp.provider\" in message\n    assert \"max_emails\" in message\ndef test_non_mapping_yaml_is_rejected(tmp_path):\n    path = _write(tmp_path, \"- just\\n- a list\\n\")\n    with pytest.raises(ConfigError, match=\"must contain a YAML mapping\"):\n        load_settings(path)\ndef test_missing_colon_reports_file_line_and_hint(tmp_path):",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "test_non_mapping_yaml_is_rejected",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_non_mapping_yaml_is_rejected(tmp_path):\n    path = _write(tmp_path, \"- just\\n- a list\\n\")\n    with pytest.raises(ConfigError, match=\"must contain a YAML mapping\"):\n        load_settings(path)\ndef test_missing_colon_reports_file_line_and_hint(tmp_path):\n    # The exact typo that produces an unreadable pyyaml traceback.\n    path = _write(tmp_path, \"mailbox:\\n  provider: demo\\n\\nwhatsapp\\n  provider: console\\n\")\n    message = str(pytest.raises(ConfigError, load_settings, path).value)\n    assert str(path) in message\n    assert \"could not find expected ':'\" in message",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "test_missing_colon_reports_file_line_and_hint",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_missing_colon_reports_file_line_and_hint(tmp_path):\n    # The exact typo that produces an unreadable pyyaml traceback.\n    path = _write(tmp_path, \"mailbox:\\n  provider: demo\\n\\nwhatsapp\\n  provider: console\\n\")\n    message = str(pytest.raises(ConfigError, load_settings, path).value)\n    assert str(path) in message\n    assert \"could not find expected ':'\" in message\n    assert \"provider: console\" in message  # the offending line is quoted back\n    assert \"hint:\" in message\ndef test_yaml_error_without_a_mark_still_reports_the_file(tmp_path, monkeypatch):\n    import yaml as yaml_module",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "test_yaml_error_without_a_mark_still_reports_the_file",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_yaml_error_without_a_mark_still_reports_the_file(tmp_path, monkeypatch):\n    import yaml as yaml_module\n    path = _write(tmp_path, \"whatsapp:\\n  provider: console\\n\")\n    def boom(*args, **kwargs):\n        raise yaml_module.YAMLError(\"something odd\")\n    monkeypatch.setattr(yaml_module, \"safe_load\", boom)\n    message = str(pytest.raises(ConfigError, load_settings, path).value)\n    assert str(path) in message\ndef test_secrets_are_redacted_before_logging():\n    payload = {",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "test_secrets_are_redacted_before_logging",
+        "kind": 2,
+        "importPath": "tests.test_config",
+        "description": "tests.test_config",
+        "peekOfCode": "def test_secrets_are_redacted_before_logging():\n    payload = {\n        \"username\": \"me@example.com\",\n        \"password\": \"hunter2\",\n        \"meta\": {\"access_token\": \"abc\", \"phone_number_id\": \"123\"},\n        \"items\": [{\"auth_token\": \"xyz\"}],\n    }\n    assert redact(payload) == {\n        \"username\": \"me@example.com\",\n        \"password\": \"***\",",
+        "detail": "tests.test_config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 2,
+        "importPath": "tests.test_end_to_end",
+        "description": "tests.test_end_to_end",
+        "peekOfCode": "def settings(tmp_path, monkeypatch):\n    \"\"\"A demo-mailbox, console-WhatsApp config on throwaway ports.\"\"\"\n    config = {\n        \"mailbox\": {\"provider\": \"demo\", \"sample_file\": str(tmp_path / \"mail.json\")},\n        \"whatsapp\": {\"provider\": \"console\", \"to\": \"971568896895\"},\n        # Unreachable on purpose: the pipeline must not depend on the model.\n        \"ollama\": {\"base_url\": \"http://127.0.0.1:1\", \"required\": False},\n        \"agents\": {\n            \"mailbox\": {\"host\": \"127.0.0.1\", \"port\": _free_port()},\n            \"whatsapp\": {\"host\": \"127.0.0.1\", \"port\": _free_port()},",
+        "detail": "tests.test_end_to_end",
+        "documentation": {}
+    },
+    {
+        "label": "test_strip_reasoning_removes_think_block",
+        "kind": 2,
+        "importPath": "tests.test_llm",
+        "description": "tests.test_llm",
+        "peekOfCode": "def test_strip_reasoning_removes_think_block():\n    raw = \"<think>Let me consider this carefully.</think>\\n\\nThe answer.\"\n    assert strip_reasoning(raw) == \"The answer.\"\ndef test_strip_reasoning_handles_truncated_block():\n    # A response cut off by num_predict leaves <think> unclosed.\n    assert strip_reasoning(\"Prefix. <think>still reasoning and then cut\") == \"Prefix.\"\ndef test_strip_reasoning_passes_plain_text_through():\n    assert strip_reasoning(\"  just an answer  \") == \"just an answer\"\n@pytest.fixture\ndef mock_transport(monkeypatch):",
+        "detail": "tests.test_llm",
+        "documentation": {}
+    },
+    {
+        "label": "test_strip_reasoning_handles_truncated_block",
+        "kind": 2,
+        "importPath": "tests.test_llm",
+        "description": "tests.test_llm",
+        "peekOfCode": "def test_strip_reasoning_handles_truncated_block():\n    # A response cut off by num_predict leaves <think> unclosed.\n    assert strip_reasoning(\"Prefix. <think>still reasoning and then cut\") == \"Prefix.\"\ndef test_strip_reasoning_passes_plain_text_through():\n    assert strip_reasoning(\"  just an answer  \") == \"just an answer\"\n@pytest.fixture\ndef mock_transport(monkeypatch):\n    def install(handler):\n        transport = httpx.MockTransport(handler)\n        original_init = httpx.AsyncClient.__init__",
+        "detail": "tests.test_llm",
+        "documentation": {}
+    },
+    {
+        "label": "test_strip_reasoning_passes_plain_text_through",
+        "kind": 2,
+        "importPath": "tests.test_llm",
+        "description": "tests.test_llm",
+        "peekOfCode": "def test_strip_reasoning_passes_plain_text_through():\n    assert strip_reasoning(\"  just an answer  \") == \"just an answer\"\n@pytest.fixture\ndef mock_transport(monkeypatch):\n    def install(handler):\n        transport = httpx.MockTransport(handler)\n        original_init = httpx.AsyncClient.__init__\n        def patched_init(self, *args, **kwargs):\n            kwargs[\"transport\"] = transport\n            original_init(self, *args, **kwargs)",
+        "detail": "tests.test_llm",
+        "documentation": {}
+    },
+    {
+        "label": "mock_transport",
+        "kind": 2,
+        "importPath": "tests.test_llm",
+        "description": "tests.test_llm",
+        "peekOfCode": "def mock_transport(monkeypatch):\n    def install(handler):\n        transport = httpx.MockTransport(handler)\n        original_init = httpx.AsyncClient.__init__\n        def patched_init(self, *args, **kwargs):\n            kwargs[\"transport\"] = transport\n            original_init(self, *args, **kwargs)\n        monkeypatch.setattr(httpx.AsyncClient, \"__init__\", patched_init)\n    return install\nasync def test_chat_strips_reasoning_and_sends_think_false(mock_transport):",
+        "detail": "tests.test_llm",
+        "documentation": {}
+    },
+    {
+        "label": "test_message_contains_sender_subject_and_priority_flag",
+        "kind": 2,
+        "importPath": "tests.test_message_rendering",
+        "description": "tests.test_message_rendering",
+        "peekOfCode": "def test_message_contains_sender_subject_and_priority_flag():\n    text = render_message(REQUEST, \"A recruiter is asking about your availability.\")\n    assert \"TOP PRIORITY\" in text\n    assert \"Priya Raman <priya@example.com>\" in text\n    assert \"Senior Engineer position\" in text\n    assert \"A recruiter is asking about your availability.\" in text\ndef test_priority_flag_lists_matched_keywords():\n    assert \"(position)\" in render_message(REQUEST)\ndef test_non_priority_message_has_no_flag():\n    ordinary = REQUEST.model_copy(update={\"priority\": False, \"matched_keywords\": []})",
+        "detail": "tests.test_message_rendering",
+        "documentation": {}
+    },
+    {
+        "label": "test_priority_flag_lists_matched_keywords",
+        "kind": 2,
+        "importPath": "tests.test_message_rendering",
+        "description": "tests.test_message_rendering",
+        "peekOfCode": "def test_priority_flag_lists_matched_keywords():\n    assert \"(position)\" in render_message(REQUEST)\ndef test_non_priority_message_has_no_flag():\n    ordinary = REQUEST.model_copy(update={\"priority\": False, \"matched_keywords\": []})\n    text = render_message(ordinary)\n    assert \"TOP PRIORITY\" not in text\n    assert \"Senior Engineer position\" in text\ndef test_message_is_complete_without_any_llm_output():\n    # Ollama being down must not cost the user the sender or subject.\n    text = render_message(REQUEST, \"\")",
+        "detail": "tests.test_message_rendering",
+        "documentation": {}
+    },
+    {
+        "label": "test_non_priority_message_has_no_flag",
+        "kind": 2,
+        "importPath": "tests.test_message_rendering",
+        "description": "tests.test_message_rendering",
+        "peekOfCode": "def test_non_priority_message_has_no_flag():\n    ordinary = REQUEST.model_copy(update={\"priority\": False, \"matched_keywords\": []})\n    text = render_message(ordinary)\n    assert \"TOP PRIORITY\" not in text\n    assert \"Senior Engineer position\" in text\ndef test_message_is_complete_without_any_llm_output():\n    # Ollama being down must not cost the user the sender or subject.\n    text = render_message(REQUEST, \"\")\n    assert \"*From:* Priya Raman <priya@example.com>\" in text\n    assert \"*Subject:* Senior Engineer position\" in text",
+        "detail": "tests.test_message_rendering",
+        "documentation": {}
+    },
+    {
+        "label": "test_message_is_complete_without_any_llm_output",
+        "kind": 2,
+        "importPath": "tests.test_message_rendering",
+        "description": "tests.test_message_rendering",
+        "peekOfCode": "def test_message_is_complete_without_any_llm_output():\n    # Ollama being down must not cost the user the sender or subject.\n    text = render_message(REQUEST, \"\")\n    assert \"*From:* Priya Raman <priya@example.com>\" in text\n    assert \"*Subject:* Senior Engineer position\" in text\n    assert text.rstrip() == text\ndef test_one_line_keeps_first_sentence_only():\n    assert one_line(\"First thing. Second thing. Third.\") == \"First thing.\"\ndef test_one_line_strips_markdown_and_whitespace():\n    assert one_line('  \"**A recruiter wrote in**\"  ') == \"A recruiter wrote in\"",
+        "detail": "tests.test_message_rendering",
+        "documentation": {}
+    },
+    {
+        "label": "test_one_line_keeps_first_sentence_only",
+        "kind": 2,
+        "importPath": "tests.test_message_rendering",
+        "description": "tests.test_message_rendering",
+        "peekOfCode": "def test_one_line_keeps_first_sentence_only():\n    assert one_line(\"First thing. Second thing. Third.\") == \"First thing.\"\ndef test_one_line_strips_markdown_and_whitespace():\n    assert one_line('  \"**A recruiter wrote in**\"  ') == \"A recruiter wrote in\"\ndef test_one_line_truncates_a_rambling_answer():\n    result = one_line(\" \".join([\"word\"] * 60))\n    assert result.endswith(\"…\")\n    assert len(result.split()) == 24  # MAX_CONTEXT_WORDS, ellipsis glued to the last\ndef test_one_line_of_nothing_is_empty():\n    assert one_line(\"\") == \"\"",
+        "detail": "tests.test_message_rendering",
+        "documentation": {}
+    },
+    {
+        "label": "test_one_line_strips_markdown_and_whitespace",
+        "kind": 2,
+        "importPath": "tests.test_message_rendering",
+        "description": "tests.test_message_rendering",
+        "peekOfCode": "def test_one_line_strips_markdown_and_whitespace():\n    assert one_line('  \"**A recruiter wrote in**\"  ') == \"A recruiter wrote in\"\ndef test_one_line_truncates_a_rambling_answer():\n    result = one_line(\" \".join([\"word\"] * 60))\n    assert result.endswith(\"…\")\n    assert len(result.split()) == 24  # MAX_CONTEXT_WORDS, ellipsis glued to the last\ndef test_one_line_of_nothing_is_empty():\n    assert one_line(\"\") == \"\"\n    assert one_line(\"   \") == \"\"",
+        "detail": "tests.test_message_rendering",
+        "documentation": {}
+    },
+    {
+        "label": "test_one_line_truncates_a_rambling_answer",
+        "kind": 2,
+        "importPath": "tests.test_message_rendering",
+        "description": "tests.test_message_rendering",
+        "peekOfCode": "def test_one_line_truncates_a_rambling_answer():\n    result = one_line(\" \".join([\"word\"] * 60))\n    assert result.endswith(\"…\")\n    assert len(result.split()) == 24  # MAX_CONTEXT_WORDS, ellipsis glued to the last\ndef test_one_line_of_nothing_is_empty():\n    assert one_line(\"\") == \"\"\n    assert one_line(\"   \") == \"\"",
+        "detail": "tests.test_message_rendering",
+        "documentation": {}
+    },
+    {
+        "label": "test_one_line_of_nothing_is_empty",
+        "kind": 2,
+        "importPath": "tests.test_message_rendering",
+        "description": "tests.test_message_rendering",
+        "peekOfCode": "def test_one_line_of_nothing_is_empty():\n    assert one_line(\"\") == \"\"\n    assert one_line(\"   \") == \"\"",
+        "detail": "tests.test_message_rendering",
+        "documentation": {}
+    },
+    {
+        "label": "REQUEST",
+        "kind": 5,
+        "importPath": "tests.test_message_rendering",
+        "description": "tests.test_message_rendering",
+        "peekOfCode": "REQUEST = NotifyRequest(\n    uid=\"7\",\n    sender=\"Priya Raman <priya@example.com>\",\n    subject=\"Senior Engineer position\",\n    priority=True,\n    matched_keywords=[\"position\"],\n    received_at=\"2026-08-16T09:12:00+04:00\",\n)\ndef test_message_contains_sender_subject_and_priority_flag():\n    text = render_message(REQUEST, \"A recruiter is asking about your availability.\")",
+        "detail": "tests.test_message_rendering",
+        "documentation": {}
+    },
+    {
+        "label": "test_subject_keywords",
+        "kind": 2,
+        "importPath": "tests.test_priority",
+        "description": "tests.test_priority",
+        "peekOfCode": "def test_subject_keywords(subject, expected):\n    is_priority, matched = evaluate(subject, \"\", KEYWORDS)\n    assert matched == expected\n    assert is_priority is bool(expected)\ndef test_body_alone_triggers_priority():\n    is_priority, matched = evaluate(\"Quick question\", \"We have an opening on my team.\", KEYWORDS)\n    assert is_priority\n    assert matched == [\"opening\"]\ndef test_matching_is_case_insensitive():\n    assert match_keywords(\"JOB OPPORTUNITY\", KEYWORDS) == [\"job\", \"opportunity\"]",
+        "detail": "tests.test_priority",
+        "documentation": {}
+    },
+    {
+        "label": "test_body_alone_triggers_priority",
+        "kind": 2,
+        "importPath": "tests.test_priority",
+        "description": "tests.test_priority",
+        "peekOfCode": "def test_body_alone_triggers_priority():\n    is_priority, matched = evaluate(\"Quick question\", \"We have an opening on my team.\", KEYWORDS)\n    assert is_priority\n    assert matched == [\"opening\"]\ndef test_matching_is_case_insensitive():\n    assert match_keywords(\"JOB OPPORTUNITY\", KEYWORDS) == [\"job\", \"opportunity\"]\ndef test_plurals_and_possessives_match():\n    assert match_keywords(\"two openings and three positions\", KEYWORDS) == [\"opening\", \"position\"]\n@pytest.mark.parametrize(\"text\", [\"repositioning the brand\", \"jobless claims\", \"reopening soon\"])\ndef test_substrings_do_not_match(text):",
+        "detail": "tests.test_priority",
+        "documentation": {}
+    },
+    {
+        "label": "test_matching_is_case_insensitive",
+        "kind": 2,
+        "importPath": "tests.test_priority",
+        "description": "tests.test_priority",
+        "peekOfCode": "def test_matching_is_case_insensitive():\n    assert match_keywords(\"JOB OPPORTUNITY\", KEYWORDS) == [\"job\", \"opportunity\"]\ndef test_plurals_and_possessives_match():\n    assert match_keywords(\"two openings and three positions\", KEYWORDS) == [\"opening\", \"position\"]\n@pytest.mark.parametrize(\"text\", [\"repositioning the brand\", \"jobless claims\", \"reopening soon\"])\ndef test_substrings_do_not_match(text):\n    # \\b anchors keep 'position' out of 'repositioning'.\n    assert match_keywords(text, KEYWORDS) == []\ndef test_results_follow_config_order_without_duplicates():\n    matched = match_keywords(\"position, job, position, opening\", KEYWORDS)",
+        "detail": "tests.test_priority",
+        "documentation": {}
+    },
+    {
+        "label": "test_plurals_and_possessives_match",
+        "kind": 2,
+        "importPath": "tests.test_priority",
+        "description": "tests.test_priority",
+        "peekOfCode": "def test_plurals_and_possessives_match():\n    assert match_keywords(\"two openings and three positions\", KEYWORDS) == [\"opening\", \"position\"]\n@pytest.mark.parametrize(\"text\", [\"repositioning the brand\", \"jobless claims\", \"reopening soon\"])\ndef test_substrings_do_not_match(text):\n    # \\b anchors keep 'position' out of 'repositioning'.\n    assert match_keywords(text, KEYWORDS) == []\ndef test_results_follow_config_order_without_duplicates():\n    matched = match_keywords(\"position, job, position, opening\", KEYWORDS)\n    assert matched == [\"job\", \"opening\", \"position\"]\ndef test_custom_keywords_from_config():",
+        "detail": "tests.test_priority",
+        "documentation": {}
+    },
+    {
+        "label": "test_substrings_do_not_match",
+        "kind": 2,
+        "importPath": "tests.test_priority",
+        "description": "tests.test_priority",
+        "peekOfCode": "def test_substrings_do_not_match(text):\n    # \\b anchors keep 'position' out of 'repositioning'.\n    assert match_keywords(text, KEYWORDS) == []\ndef test_results_follow_config_order_without_duplicates():\n    matched = match_keywords(\"position, job, position, opening\", KEYWORDS)\n    assert matched == [\"job\", \"opening\", \"position\"]\ndef test_custom_keywords_from_config():\n    assert match_keywords(\"Invoice overdue\", [\"invoice\"]) == [\"invoice\"]\n    assert match_keywords(\"Invoice overdue\", KEYWORDS) == []\ndef test_empty_inputs_are_safe():",
+        "detail": "tests.test_priority",
+        "documentation": {}
+    },
+    {
+        "label": "test_results_follow_config_order_without_duplicates",
+        "kind": 2,
+        "importPath": "tests.test_priority",
+        "description": "tests.test_priority",
+        "peekOfCode": "def test_results_follow_config_order_without_duplicates():\n    matched = match_keywords(\"position, job, position, opening\", KEYWORDS)\n    assert matched == [\"job\", \"opening\", \"position\"]\ndef test_custom_keywords_from_config():\n    assert match_keywords(\"Invoice overdue\", [\"invoice\"]) == [\"invoice\"]\n    assert match_keywords(\"Invoice overdue\", KEYWORDS) == []\ndef test_empty_inputs_are_safe():\n    assert evaluate(\"\", \"\", KEYWORDS) == (False, [])\n    assert match_keywords(\"anything\", []) == []",
+        "detail": "tests.test_priority",
+        "documentation": {}
+    },
+    {
+        "label": "test_custom_keywords_from_config",
+        "kind": 2,
+        "importPath": "tests.test_priority",
+        "description": "tests.test_priority",
+        "peekOfCode": "def test_custom_keywords_from_config():\n    assert match_keywords(\"Invoice overdue\", [\"invoice\"]) == [\"invoice\"]\n    assert match_keywords(\"Invoice overdue\", KEYWORDS) == []\ndef test_empty_inputs_are_safe():\n    assert evaluate(\"\", \"\", KEYWORDS) == (False, [])\n    assert match_keywords(\"anything\", []) == []",
+        "detail": "tests.test_priority",
+        "documentation": {}
+    },
+    {
+        "label": "test_empty_inputs_are_safe",
+        "kind": 2,
+        "importPath": "tests.test_priority",
+        "description": "tests.test_priority",
+        "peekOfCode": "def test_empty_inputs_are_safe():\n    assert evaluate(\"\", \"\", KEYWORDS) == (False, [])\n    assert match_keywords(\"anything\", []) == []",
+        "detail": "tests.test_priority",
+        "documentation": {}
+    },
+    {
+        "label": "KEYWORDS",
+        "kind": 5,
+        "importPath": "tests.test_priority",
+        "description": "tests.test_priority",
+        "peekOfCode": "KEYWORDS = [\"job\", \"opportunity\", \"opening\", \"position\"]\n@pytest.mark.parametrize(\n    \"subject,expected\",\n    [\n        (\"Senior Engineer position at Acme\", [\"position\"]),\n        (\"New opening on the platform team\", [\"opening\"]),\n        (\"An opportunity you might like\", [\"opportunity\"]),\n        (\"Job alert: 5 new matches\", [\"job\"]),\n        (\"Your invoice is ready\", []),\n    ],",
+        "detail": "tests.test_priority",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_mailbox_honours_provider",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_build_mailbox_honours_provider():\n    assert isinstance(build_mailbox(MailboxSettings(provider=\"demo\")), DemoMailbox)\n    assert isinstance(build_mailbox(MailboxSettings(provider=\"imap\")), ImapMailbox)\ndef test_demo_mailbox_reads_the_sample_file(tmp_path):\n    path = tmp_path / \"mail.json\"\n    path.write_text(\n        json.dumps(\n            {\n                \"messages\": [\n                    {\"uid\": \"1\", \"sender\": \"A\", \"subject\": \"One\", \"unread\": True},",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_demo_mailbox_reads_the_sample_file",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_demo_mailbox_reads_the_sample_file(tmp_path):\n    path = tmp_path / \"mail.json\"\n    path.write_text(\n        json.dumps(\n            {\n                \"messages\": [\n                    {\"uid\": \"1\", \"sender\": \"A\", \"subject\": \"One\", \"unread\": True},\n                    {\"uid\": \"2\", \"sender\": \"B\", \"subject\": \"Two\", \"unread\": False},\n                ]\n            }",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_demo_mailbox_survives_a_missing_file",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_demo_mailbox_survives_a_missing_file(tmp_path):\n    mailbox = DemoMailbox(tmp_path / \"gone.json\")\n    assert mailbox.list_messages(10, unread_only=True) == []\n    assert mailbox.ping()[\"ok\"] is False\ndef test_shipped_sample_file_parses():\n    messages = DemoMailbox(\"data/sample_emails.json\").list_messages(50, unread_only=False)\n    assert len(messages) >= 6\n    assert all(m.uid and m.sender and m.subject for m in messages)\nRAW_EMAIL = b\"\"\"From: =?utf-8?q?Priya_Raman?= <priya@example.com>\nSubject: =?utf-8?q?Senior_Engineer_position?=",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_shipped_sample_file_parses",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_shipped_sample_file_parses():\n    messages = DemoMailbox(\"data/sample_emails.json\").list_messages(50, unread_only=False)\n    assert len(messages) >= 6\n    assert all(m.uid and m.sender and m.subject for m in messages)\nRAW_EMAIL = b\"\"\"From: =?utf-8?q?Priya_Raman?= <priya@example.com>\nSubject: =?utf-8?q?Senior_Engineer_position?=\nDate: Sun, 16 Aug 2026 09:12:00 +0400\nContent-Type: text/plain; charset=\"utf-8\"\nHello, we have a position open on the platform team.\n\"\"\"",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_imap_summary_decodes_headers_and_body",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_imap_summary_decodes_headers_and_body():\n    summary = ImapMailbox._to_summary(\"42\", email.message_from_bytes(RAW_EMAIL))\n    assert summary.uid == \"42\"\n    assert summary.sender == \"Priya Raman <priya@example.com>\"\n    assert summary.sender_email == \"priya@example.com\"\n    assert summary.subject == \"Senior Engineer position\"\n    assert summary.received_at.startswith(\"2026-08-16T09:12:00\")\n    assert \"position open on the platform team\" in summary.snippet\nMULTIPART_EMAIL = b\"\"\"From: Careers <jobs@example.com>\nSubject: Opening",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_imap_summary_prefers_plain_text_part",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_imap_summary_prefers_plain_text_part():\n    summary = ImapMailbox._to_summary(\"7\", email.message_from_bytes(MULTIPART_EMAIL))\n    assert \"Plain text body.\" in summary.snippet\n    assert \"HTML body\" not in summary.snippet\ndef test_imap_summary_falls_back_to_stripped_html():\n    html_only = MULTIPART_EMAIL.replace(b\"Content-Type: text/plain\", b\"Content-Type: text/x-other\")\n    summary = ImapMailbox._to_summary(\"8\", email.message_from_bytes(html_only))\n    assert \"HTML body.\" in summary.snippet\n    assert \"<p>\" not in summary.snippet\ndef test_imap_refuses_to_connect_without_a_password():",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_imap_summary_falls_back_to_stripped_html",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_imap_summary_falls_back_to_stripped_html():\n    html_only = MULTIPART_EMAIL.replace(b\"Content-Type: text/plain\", b\"Content-Type: text/x-other\")\n    summary = ImapMailbox._to_summary(\"8\", email.message_from_bytes(html_only))\n    assert \"HTML body.\" in summary.snippet\n    assert \"<p>\" not in summary.snippet\ndef test_imap_refuses_to_connect_without_a_password():\n    mailbox = ImapMailbox(MailboxSettings(provider=\"imap\", auth=\"password\", password=\"\"))\n    with pytest.raises(RuntimeError, match=\"mailbox.password is empty\"):\n        mailbox.connect()\n# --- whatsapp ---------------------------------------------------------------",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_imap_refuses_to_connect_without_a_password",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_imap_refuses_to_connect_without_a_password():\n    mailbox = ImapMailbox(MailboxSettings(provider=\"imap\", auth=\"password\", password=\"\"))\n    with pytest.raises(RuntimeError, match=\"mailbox.password is empty\"):\n        mailbox.connect()\n# --- whatsapp ---------------------------------------------------------------\ndef test_build_channel_honours_provider():\n    assert isinstance(build_channel(WhatsAppSettings(provider=\"console\")), ConsoleChannel)\n    meta = WhatsAppSettings(provider=\"meta\")\n    meta.meta.access_token = \"t\"\n    meta.meta.phone_number_id = \"1\"",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_build_channel_honours_provider",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_build_channel_honours_provider():\n    assert isinstance(build_channel(WhatsAppSettings(provider=\"console\")), ConsoleChannel)\n    meta = WhatsAppSettings(provider=\"meta\")\n    meta.meta.access_token = \"t\"\n    meta.meta.phone_number_id = \"1\"\n    assert isinstance(build_channel(meta), MetaCloudChannel)\n@pytest.mark.parametrize(\n    \"raw,expected\",\n    [(\"+971 56 889 6895\", \"971568896895\"), (\"971568896895\", \"971568896895\")],\n)",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_normalize_number",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_normalize_number(raw, expected):\n    assert normalize_number(raw) == expected\ndef test_meta_channel_requires_credentials():\n    with pytest.raises(RuntimeError, match=\"meta.access_token\"):\n        MetaCloudChannel(WhatsAppSettings(provider=\"meta\"))\ndef test_twilio_channel_requires_credentials():\n    with pytest.raises(RuntimeError, match=\"twilio.account_sid\"):\n        TwilioChannel(WhatsAppSettings(provider=\"twilio\"))\nasync def test_console_channel_always_succeeds():\n    result = await ConsoleChannel().send(\"971568896895\", \"hello\", priority=True)",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_meta_channel_requires_credentials",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_meta_channel_requires_credentials():\n    with pytest.raises(RuntimeError, match=\"meta.access_token\"):\n        MetaCloudChannel(WhatsAppSettings(provider=\"meta\"))\ndef test_twilio_channel_requires_credentials():\n    with pytest.raises(RuntimeError, match=\"twilio.account_sid\"):\n        TwilioChannel(WhatsAppSettings(provider=\"twilio\"))\nasync def test_console_channel_always_succeeds():\n    result = await ConsoleChannel().send(\"971568896895\", \"hello\", priority=True)\n    assert result == {\n        \"ok\": True,",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_twilio_channel_requires_credentials",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_twilio_channel_requires_credentials():\n    with pytest.raises(RuntimeError, match=\"twilio.account_sid\"):\n        TwilioChannel(WhatsAppSettings(provider=\"twilio\"))\nasync def test_console_channel_always_succeeds():\n    result = await ConsoleChannel().send(\"971568896895\", \"hello\", priority=True)\n    assert result == {\n        \"ok\": True,\n        \"provider\": \"console\",\n        \"to\": \"971568896895\",\n        \"message_id\": \"console-dry-run\",",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_meta_text_payload_shape",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_meta_text_payload_shape():\n    payload = MetaCloudChannel(_meta_settings())._payload(\"971568896895\", \"line one\\nline two\")\n    assert payload[\"type\"] == \"text\"\n    assert payload[\"text\"][\"body\"] == \"line one\\nline two\"\ndef test_meta_template_payload_flattens_newlines():\n    # Meta rejects newlines inside template parameters.\n    payload = MetaCloudChannel(_meta_settings(\"template\"))._payload(\"971\", \"line one\\nline two\")\n    assert payload[\"type\"] == \"template\"\n    param = payload[\"template\"][\"components\"][0][\"parameters\"][0][\"text\"]\n    assert \"\\n\" not in param",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_meta_template_payload_flattens_newlines",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_meta_template_payload_flattens_newlines():\n    # Meta rejects newlines inside template parameters.\n    payload = MetaCloudChannel(_meta_settings(\"template\"))._payload(\"971\", \"line one\\nline two\")\n    assert payload[\"type\"] == \"template\"\n    param = payload[\"template\"][\"components\"][0][\"parameters\"][0][\"text\"]\n    assert \"\\n\" not in param\n    assert param == \"line one line two\"\n@pytest.fixture\ndef mock_transport(monkeypatch):\n    def install(handler):",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "mock_transport",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def mock_transport(monkeypatch):\n    def install(handler):\n        transport = httpx.MockTransport(handler)\n        original_init = httpx.AsyncClient.__init__\n        def patched_init(self, *args, **kwargs):\n            kwargs[\"transport\"] = transport\n            original_init(self, *args, **kwargs)\n        monkeypatch.setattr(httpx.AsyncClient, \"__init__\", patched_init)\n    return install\nasync def test_meta_send_returns_message_id(mock_transport):",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "test_explain_error_gives_actionable_hints",
+        "kind": 2,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "def test_explain_error_gives_actionable_hints(body, expected):\n    assert expected in explain_error(body)\nasync def test_meta_send_explains_an_expired_token(mock_transport):\n    mock_transport(lambda request: httpx.Response(401, json=EXPIRED_TOKEN_BODY))\n    result = await MetaCloudChannel(_meta_settings()).send(\"971568896895\", \"hi\")\n    assert result[\"ok\"] is False\n    # The raw Meta payload alone does not tell you the token needs reissuing.\n    assert \"expired\" in result[\"error\"]\n    assert \"System User token\" in result[\"error\"]\nasync def test_meta_verify_detects_an_expired_token(mock_transport):",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "RAW_EMAIL",
+        "kind": 5,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "RAW_EMAIL = b\"\"\"From: =?utf-8?q?Priya_Raman?= <priya@example.com>\nSubject: =?utf-8?q?Senior_Engineer_position?=\nDate: Sun, 16 Aug 2026 09:12:00 +0400\nContent-Type: text/plain; charset=\"utf-8\"\nHello, we have a position open on the platform team.\n\"\"\"\ndef test_imap_summary_decodes_headers_and_body():\n    summary = ImapMailbox._to_summary(\"42\", email.message_from_bytes(RAW_EMAIL))\n    assert summary.uid == \"42\"\n    assert summary.sender == \"Priya Raman <priya@example.com>\"",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "MULTIPART_EMAIL",
+        "kind": 5,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "MULTIPART_EMAIL = b\"\"\"From: Careers <jobs@example.com>\nSubject: Opening\nMIME-Version: 1.0\nContent-Type: multipart/alternative; boundary=\"b\"\n--b\nContent-Type: text/plain; charset=\"utf-8\"\nPlain text body.\n--b\nContent-Type: text/html; charset=\"utf-8\"\n<html><body><p>HTML body.</p></body></html>",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    },
+    {
+        "label": "EXPIRED_TOKEN_BODY",
+        "kind": 5,
+        "importPath": "tests.test_providers",
+        "description": "tests.test_providers",
+        "peekOfCode": "EXPIRED_TOKEN_BODY = {\n    \"error\": {\n        \"message\": \"Error validating access token: Session has expired on Friday, 14-Aug-26\",\n        \"type\": \"OAuthException\",\n        \"code\": 190,\n        \"error_subcode\": 463,\n    }\n}\n@pytest.mark.parametrize(\n    \"body,expected\",",
+        "detail": "tests.test_providers",
+        "documentation": {}
+    }
+]

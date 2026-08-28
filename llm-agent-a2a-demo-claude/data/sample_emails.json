@@ -1,0 +1,58 @@
+{
+  "messages": [
+    {
+      "uid": "1001",
+      "sender": "Priya Raman <priya.raman@northwind-talent.com>",
+      "sender_email": "priya.raman@northwind-talent.com",
+      "subject": "Senior Backend Engineer position at Northwind",
+      "received_at": "2026-08-16T09:12:00+04:00",
+      "snippet": "Hi, I came across your profile and wanted to reach out about a senior backend engineer position on our platform team. The role is hybrid in Dubai. Would you be open to a short call this week?",
+      "unread": true
+    },
+    {
+      "uid": "1002",
+      "sender": "AWS Billing <no-reply@amazon.com>",
+      "sender_email": "no-reply@amazon.com",
+      "subject": "Your AWS invoice for July 2026 is available",
+      "received_at": "2026-08-16T08:40:00+04:00",
+      "snippet": "Your invoice for the billing period ending 31 July 2026 is now available in the Billing console. Total due: USD 42.18. No action is required if you are on autopay.",
+      "unread": true
+    },
+    {
+      "uid": "1003",
+      "sender": "Careers Team <careers@vectorlabs.io>",
+      "sender_email": "careers@vectorlabs.io",
+      "subject": "New opening on the ML infrastructure team",
+      "received_at": "2026-08-15T18:05:00+04:00",
+      "snippet": "We have a new opening for a machine learning infrastructure engineer. Given your background in distributed systems we think this could be a strong fit. Full description attached.",
+      "unread": true
+    },
+    {
+      "uid": "1004",
+      "sender": "Meetup <info@meetup.com>",
+      "sender_email": "info@meetup.com",
+      "subject": "Dubai Java User Group meets Thursday",
+      "received_at": "2026-08-15T14:22:00+04:00",
+      "snippet": "This week's session covers virtual threads and structured concurrency in Java 25. Doors open at 6:30pm, talk starts at 7pm. Pizza is sponsored by the venue.",
+      "unread": true
+    },
+    {
+      "uid": "1005",
+      "sender": "Sofia Almeida <sofia@brightpath.partners>",
+      "sender_email": "sofia@brightpath.partners",
+      "subject": "An opportunity I thought you would want to hear about",
+      "received_at": "2026-08-15T11:47:00+04:00",
+      "snippet": "A portfolio company of ours is building out its platform group and asked me for introductions. I think the opportunity would suit someone with your experience. Happy to share details.",
+      "unread": true
+    },
+    {
+      "uid": "1006",
+      "sender": "GitHub <notifications@github.com>",
+      "sender_email": "notifications@github.com",
+      "subject": "[learning-code-labs] CI failed on main",
+      "received_at": "2026-08-15T09:03:00+04:00",
+      "snippet": "The workflow run for commit 8b3add0 failed at the test stage. 2 tests failed in the integration suite. View the full log on GitHub Actions.",
+      "unread": true
+    }
+  ]
+}

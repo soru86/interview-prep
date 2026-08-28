@@ -1,0 +1,32 @@
+# Copy to terraform.tfvars and fill in your values.
+# Do NOT commit terraform.tfvars with real credentials.
+
+aws_region   = "us-east-1"
+project_name = "nest-js-demo"
+environment  = "dev"
+
+# GitHub repository that runs the CI/CD workflow
+github_org  = "your-github-org"
+github_repo = "learning-code-labs"
+
+# Branches allowed to assume the GitHub Actions IAM role
+github_branches = ["main"]
+
+# EKS cluster settings
+create_cluster        = true
+existing_cluster_name = ""
+cluster_version       = "1.31"
+node_instance_types   = ["t3.medium"]
+node_desired_size     = 2
+node_min_size         = 1
+node_max_size         = 3
+
+# ECR repository
+ecr_repository_name = "nest-js-demo"
+
+# OIDC for GitHub Actions
+enable_github_oidc = true
+
+tags = {
+  Owner = "platform-team"
+}

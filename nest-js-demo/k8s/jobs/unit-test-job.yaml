@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: nest-js-demo-unit-test
+  namespace: nest-js-demo-ci
+  labels:
+    app.kubernetes.io/name: nest-js-demo
+    app.kubernetes.io/component: unit-test
+spec:
+  backoffLimit: 0
+  ttlSecondsAfterFinished: 3600
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: nest-js-demo
+        app.kubernetes.io/component: unit-test
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: unit-test
+          image: TEST_RUNNER_IMAGE
+          imagePullPolicy: IfNotPresent
+          command: ["npm", "test"]
+          envFrom:
+            - configMapRef:
+                name: nest-js-demo-test-config
+          resources:
+            requests:
+              cpu: 250m
+              memory: 512Mi
+            limits:
+              cpu: "1"
+              memory: 1Gi

@@ -1,0 +1,28 @@
+{
+  "name": "graphql-aggr-demo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*",
+    "gateway"
+  ],
+  "scripts": {
+    "build:mesh": "npm run build -w @graphql-aggr/service-mesh",
+    "certs:generate": "chmod +x scripts/gen-certs.sh && ./scripts/gen-certs.sh",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "dev": "npm run build:mesh && concurrently -n reg,log,prf,ord,not,cat,gw -c blue,green,yellow,magenta,cyan,red,white \"npm run start:dev -w register-service\" \"npm run start:dev -w login-service\" \"npm run start:dev -w profile-service\" \"npm run start:dev -w order-service\" \"npm run start:dev -w notification-service\" \"npm run start:dev -w catalog-service\" \"npm run start:dev -w api-gateway\"",
+    "seed": "ts-node -r dotenv/config scripts/seed-all.ts",
+    "dev:gateway": "npm run start:dev -w api-gateway",
+    "dev:mobile": "cd mobile && npx expo start"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "axios": "^1.8.4",
+    "concurrently": "^9.1.2",
+    "dotenv": "^17.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

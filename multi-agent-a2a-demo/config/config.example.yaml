@@ -1,0 +1,68 @@
+# Copy to config/config.yaml and fill in secrets.
+# Env vars override YAML: MAILBOX_PASSWORD, WHATSAPP_TO, META_WHATSAPP_ACCESS_TOKEN, etc.
+
+mailbox:
+  # Gmail IMAP
+  # host: imap.gmail.com
+  # port: 993
+  # username: you@gmail.com
+  # password: "your-app-password"
+
+  # Outlook.com IMAP (Microsoft requires OAuth2 / XOAUTH2 — password LOGIN is blocked)
+  host: outlook.office365.com
+  port: 993
+  username: you@outlook.com
+  password: ""
+  folder: INBOX
+  ssl: true
+  unread_only: true
+  auth: oauth2
+  oauth_client_id: ""
+  oauth_tenant: consumers
+  oauth_token_cache: data/state/msal_token.json
+
+whatsapp:
+  # meta (default) or twilio
+  provider: meta
+  to: "971568896895"
+  meta:
+    access_token: ""
+    phone_number_id: ""
+    api_version: "v21.0"
+    # template = production outbound (needs an approved Meta template)
+    # text     = free-form, only inside the 24h customer-care window
+    message_mode: template
+    template_name: email_alert
+    template_language: en
+  twilio:
+    account_sid: ""
+    auth_token: ""
+    from_number: "whatsapp:+14155238886"
+
+ollama:
+  base_url: http://localhost:11434
+  model: deepseek-r1:1.5b
+  timeout_seconds: 180
+
+priority_keywords:
+  - job
+  - opportunity
+  - opening
+  - position
+
+agents:
+  mailbox:
+    host: 127.0.0.1
+    port: 9001
+  whatsapp:
+    host: 127.0.0.1
+    port: 9002
+
+logging:
+  level: INFO
+  file: logs/agents.log
+
+dry_run: false
+poll_interval_seconds: 5
+max_emails: 20
+state_db_path: data/state/agent.db

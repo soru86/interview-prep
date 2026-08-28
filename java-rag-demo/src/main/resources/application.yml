@@ -1,0 +1,44 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: java-rag-demo
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when_authorized
+
+app:
+  google:
+    api-key: ${GOOGLE_AI_API_KEY:}
+    chat-model: ${GOOGLE_CHAT_MODEL:gemini-2.0-flash}
+    embedding-model: ${GOOGLE_EMBEDDING_MODEL:gemini-embedding-001}
+    embedding-dimensions: ${GOOGLE_EMBEDDING_DIMENSIONS:768}
+  qdrant:
+    host: ${QDRANT_HOST:localhost}
+    grpc-port: ${QDRANT_GRPC_PORT:6334}
+    http-port: ${QDRANT_HTTP_PORT:6333}
+    docs-collection: ${QDRANT_DOCS_COLLECTION:me_war_docs}
+    memory-collection: ${QDRANT_MEMORY_COLLECTION:chat_memory}
+  rag:
+    top-k: ${RAG_TOP_K:5}
+    min-score: ${RAG_MIN_SCORE:0.65}
+    chunk-size: ${RAG_CHUNK_SIZE:500}
+    chunk-overlap: ${RAG_CHUNK_OVERLAP:50}
+    auto-ingest: ${RAG_AUTO_INGEST:true}
+    corpus-path: ${RAG_CORPUS_PATH:data/corpus/middle-east-war-updates-2026.pdf}
+  memory:
+    short-term-max-messages: ${SHORT_TERM_MAX_MESSAGES:20}
+    long-term-top-k: ${LONG_TERM_TOP_K:3}
+    long-term-min-score: ${LONG_TERM_MIN_SCORE:0.60}
+
+logging:
+  level:
+    com.interviewprep.ragdemo: INFO
+    dev.langchain4j: WARN

@@ -1,0 +1,82 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: rule-studio-postgres
+    environment:
+      POSTGRES_USER: rule_studio
+      POSTGRES_PASSWORD: rule_studio
+      POSTGRES_DB: rule_studio
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rule_studio -d rule_studio"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: rule-studio-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  ollama-init:
+    image: ollama/ollama:latest
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        echo "Pulling deepseek-r1:1.5b (faster CPU-friendly DeepSeek R1)..."
+        ollama pull deepseek-r1:1.5b
+        echo "Model ready."
+    restart: "no"
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: rule-studio-api
+    environment:
+      DATABASE_URL: postgresql+asyncpg://rule_studio:rule_studio@postgres:5432/rule_studio
+      OLLAMA_BASE_URL: http://ollama:11434
+      OLLAMA_MODEL: deepseek-r1:1.5b
+      OLLAMA_TIMEOUT_SECONDS: "600"
+      CORS_ORIGINS: http://localhost:3000,http://localhost:5173,http://web
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: rule-studio-web
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  ollama_data:

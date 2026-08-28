@@ -1,0 +1,12 @@
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/Main.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/buffer/BoundedBuffer.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/config/DemoConfig.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/executor/ConsumerTask.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/executor/ProducerConsumerExecutorDemo.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/executor/ProducerTask.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/model/WorkItem.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/support/DemoResult.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/support/ShutdownSupport.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/virtualthread/ProducerConsumerVirtualThreadDemo.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/virtualthread/VirtualConsumerTask.java
+/Users/soru86/Documents/ALL_WORK/ALL_CODE/interview-prep/producer-consumer-demo/src/main/java/com/interviewprep/producerconsumer/virtualthread/VirtualProducerTask.java

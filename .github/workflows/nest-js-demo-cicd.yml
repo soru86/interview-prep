@@ -1,0 +1,317 @@
+name: NestJS Demo CI/CD
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'nest-js-demo/**'
+      - '.github/workflows/nest-js-demo-cicd.yml'
+  pull_request:
+    paths:
+      - 'nest-js-demo/**'
+      - '.github/workflows/nest-js-demo-cicd.yml'
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  APP_DIR: nest-js-demo
+  AWS_REGION: ${{ vars.AWS_REGION || 'us-east-1' }}
+  EKS_CLUSTER_NAME: ${{ vars.EKS_CLUSTER_NAME }}
+  ECR_REGISTRY: ${{ vars.ECR_REGISTRY }}
+  ECR_REPOSITORY: ${{ vars.ECR_REPOSITORY || 'nest-js-demo' }}
+  IMAGE_NAME: nest-js-demo
+
+concurrency:
+  group: nest-js-demo-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and lint
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: nest-js-demo
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: nest-js-demo/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Lint
+        run: npm run lint
+
+  aws-config:
+    name: Configure AWS
+    runs-on: ubuntu-latest
+    needs: build
+    outputs:
+      image_tag: ${{ steps.meta.outputs.image_tag }}
+      test_runner_image: ${{ steps.meta.outputs.test_runner_image }}
+      test_runner_tag: ${{ steps.meta.outputs.test_runner_tag }}
+      deploy_enabled: ${{ steps.meta.outputs.deploy_enabled }}
+    steps:
+      - name: Set image metadata
+        id: meta
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            echo "image_tag=pr-${{ github.event.number }}-${GITHUB_SHA::7}" >> "${GITHUB_OUTPUT}"
+          else
+            echo "image_tag=${GITHUB_SHA}" >> "${GITHUB_OUTPUT}"
+          fi
+          echo "test_runner_tag=${GITHUB_SHA}-test" >> "${GITHUB_OUTPUT}"
+          echo "test_runner_image=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${GITHUB_SHA}-test" >> "${GITHUB_OUTPUT}"
+          if [[ "${{ github.ref }}" == "refs/heads/main" && "${{ github.event_name }}" != "pull_request" ]]; then
+            echo "deploy_enabled=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "deploy_enabled=false" >> "${GITHUB_OUTPUT}"
+          fi
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Setup kubeconfig
+        run: aws eks update-kubeconfig --name "${{ env.EKS_CLUSTER_NAME }}" --region "${{ env.AWS_REGION }}"
+
+  unit-tests:
+    name: Unit tests (K8s Job)
+    runs-on: ubuntu-latest
+    needs: aws-config
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Setup kubeconfig
+        run: aws eks update-kubeconfig --name "${{ env.EKS_CLUSTER_NAME }}" --region "${{ env.AWS_REGION }}"
+
+      - name: Build and push test-runner image
+        uses: docker/build-push-action@v6
+        with:
+          context: nest-js-demo
+          file: nest-js-demo/docker/test-runner/Dockerfile
+          push: true
+          tags: ${{ needs.aws-config.outputs.test_runner_image }}
+
+      - name: Prepare CI namespace
+        run: |
+          kubectl apply -f nest-js-demo/k8s/base/namespace-ci.yaml
+          kubectl apply -f nest-js-demo/k8s/jobs/configmap.yaml
+
+      - name: Run unit test Job
+        run: |
+          chmod +x nest-js-demo/scripts/k8s-run-job.sh
+          nest-js-demo/scripts/k8s-run-job.sh \
+            nest-js-demo/k8s/jobs/unit-test-job.yaml \
+            nest-js-demo-ci \
+            "${{ needs.aws-config.outputs.test_runner_image }}"
+
+  integration-tests:
+    name: Integration tests (K8s Job)
+    runs-on: ubuntu-latest
+    needs: [aws-config, unit-tests]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Setup kubeconfig
+        run: aws eks update-kubeconfig --name "${{ env.EKS_CLUSTER_NAME }}" --region "${{ env.AWS_REGION }}"
+
+      - name: Deploy Kafka test dependencies
+        run: |
+          kubectl apply -f nest-js-demo/k8s/base/namespace-ci.yaml
+          kubectl apply -f nest-js-demo/k8s/jobs/configmap.yaml
+          kubectl apply -f nest-js-demo/k8s/test-deps/kafka.yaml
+          kubectl wait --for=condition=available deployment/kafka -n nest-js-demo-ci --timeout=600s
+          kubectl wait --for=condition=complete job/kafka-init -n nest-js-demo-ci --timeout=600s || true
+
+      - name: Run integration test Job
+        run: |
+          chmod +x nest-js-demo/scripts/k8s-run-job.sh
+          nest-js-demo/scripts/k8s-run-job.sh \
+            nest-js-demo/k8s/jobs/integration-test-job.yaml \
+            nest-js-demo-ci \
+            "${{ needs.aws-config.outputs.test_runner_image }}"
+
+      - name: Cleanup Kafka test dependencies
+        if: always()
+        run: kubectl delete -f nest-js-demo/k8s/test-deps/kafka.yaml --ignore-not-found=true
+
+  publish-image:
+    name: Build and publish image
+    runs-on: ubuntu-latest
+    needs: [aws-config, integration-tests]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Set image tags
+        id: docker_meta
+        run: |
+          TAGS="${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ needs.aws-config.outputs.image_tag }}"
+          if [[ "${{ needs.aws-config.outputs.deploy_enabled }}" == "true" ]]; then
+            TAGS="${TAGS}"$'\n'"${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:latest"
+          fi
+          echo "tags<<EOF" >> "${GITHUB_OUTPUT}"
+          echo "${TAGS}" >> "${GITHUB_OUTPUT}"
+          echo "EOF" >> "${GITHUB_OUTPUT}"
+
+      - name: Build and push application image
+        uses: docker/build-push-action@v6
+        with:
+          context: nest-js-demo
+          file: nest-js-demo/Dockerfile
+          push: ${{ needs.aws-config.outputs.deploy_enabled == 'true' || github.event_name == 'workflow_dispatch' }}
+          tags: ${{ steps.docker_meta.outputs.tags }}
+
+  deploy-staging:
+    name: Deploy staging (EKS)
+    runs-on: ubuntu-latest
+    needs: [aws-config, publish-image]
+    if: needs.aws-config.outputs.deploy_enabled == 'true'
+    environment: staging
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Setup kubeconfig
+        run: aws eks update-kubeconfig --name "${{ env.EKS_CLUSTER_NAME }}" --region "${{ env.AWS_REGION }}"
+
+      - name: Setup Helm
+        uses: azure/setup-helm@v4
+
+      - name: Ensure staging namespace
+        run: kubectl apply -f nest-js-demo/k8s/base/namespaces.yaml
+
+      - name: Deploy to staging
+        run: |
+          helm upgrade --install nest-js-demo-staging nest-js-demo/helm/nest-js-demo \
+            --namespace nest-js-demo-staging \
+            --create-namespace \
+            -f nest-js-demo/helm/nest-js-demo/values-staging.yaml \
+            --set image.repository="${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}" \
+            --set image.tag="${{ needs.aws-config.outputs.image_tag }}" \
+            --set testRunner.repository="${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}" \
+            --set testRunner.tag="${{ needs.aws-config.outputs.test_runner_tag }}" \
+            --set secrets.jwtSecret="${{ secrets.JWT_SECRET }}" \
+            --wait --timeout 10m
+
+  automation-tests:
+    name: Automation tests (K8s Job)
+    runs-on: ubuntu-latest
+    needs: [aws-config, deploy-staging]
+    if: needs.aws-config.outputs.deploy_enabled == 'true'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Setup kubeconfig
+        run: aws eks update-kubeconfig --name "${{ env.EKS_CLUSTER_NAME }}" --region "${{ env.AWS_REGION }}"
+
+      - name: Run automation test Job
+        run: |
+          kubectl apply -f nest-js-demo/k8s/base/namespace-ci.yaml
+          chmod +x nest-js-demo/scripts/k8s-run-job.sh
+          nest-js-demo/scripts/k8s-run-job.sh \
+            nest-js-demo/k8s/jobs/automation-test-job.yaml \
+            nest-js-demo-ci \
+            "${{ needs.aws-config.outputs.test_runner_image }}" \
+            "http://nest-js-demo-staging.nest-js-demo-staging.svc.cluster.local:3000"
+
+  deploy-production:
+    name: Deploy production (EKS)
+    runs-on: ubuntu-latest
+    needs: [aws-config, automation-tests]
+    if: needs.aws-config.outputs.deploy_enabled == 'true'
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Setup kubeconfig
+        run: aws eks update-kubeconfig --name "${{ env.EKS_CLUSTER_NAME }}" --region "${{ env.AWS_REGION }}"
+
+      - name: Setup Helm
+        uses: azure/setup-helm@v4
+
+      - name: Ensure production namespace
+        run: kubectl apply -f nest-js-demo/k8s/base/namespaces.yaml
+
+      - name: Deploy to production
+        run: |
+          helm upgrade --install nest-js-demo nest-js-demo/helm/nest-js-demo \
+            --namespace nest-js-demo-prod \
+            --create-namespace \
+            -f nest-js-demo/helm/nest-js-demo/values-prod.yaml \
+            --set image.repository="${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}" \
+            --set image.tag="${{ needs.aws-config.outputs.image_tag }}" \
+            --set testRunner.repository="${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}" \
+            --set testRunner.tag="${{ needs.aws-config.outputs.test_runner_tag }}" \
+            --set secrets.jwtSecret="${{ secrets.JWT_SECRET }}" \
+            --wait --timeout 10m
+
+      - name: Verify deployment
+        run: |
+          kubectl rollout status deployment/nest-js-demo -n nest-js-demo-prod --timeout=300s
+          kubectl get ingress -n nest-js-demo-prod || true

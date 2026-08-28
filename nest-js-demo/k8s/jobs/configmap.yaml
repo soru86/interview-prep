@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nest-js-demo-test-config
+  namespace: nest-js-demo-ci
+  labels:
+    app.kubernetes.io/name: nest-js-demo
+    app.kubernetes.io/component: ci
+data:
+  NODE_ENV: test
+  PORT: "3000"
+  DATABASE_PATH: /tmp/app.sqlite
+  JWT_SECRET: ci-test-jwt-secret-change-me
+  JWT_EXPIRES_IN: 1d
+  CORS_ORIGIN: "*"
+  KAFKA_CLIENT_ID: task-api-ci
+  KAFKA_CONSUMER_GROUP: task-consumer-ci
+  KAFKA_BROKERS: kafka:29092

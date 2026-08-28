@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+
+# Secrets / local config
+.env
+config/config.yaml
+
+# Runtime artifacts
+data/state/*.db
+data/state/*.json
+logs/*.log
+logs/*.jsonl
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/

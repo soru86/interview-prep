@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-agent-a2a-demo"
+version = "1.0.0"
+description = "Two-agent A2A system: a mailbox agent reads email over MCP and hands findings to a WhatsApp notifier agent, reasoning with DeepSeek R1 1.5B on Ollama."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "a2a-sdk[http-server]>=1.1",
+    "mcp>=2.0",
+    "pydantic>=2.5",
+    "httpx>=0.27",
+    "structlog>=24.1",
+    "PyYAML>=6.0",
+    "uvicorn>=0.30",
+    "starlette>=0.38",
+    "msal>=1.31",
+]
+
+[project.optional-dependencies]
+twilio = ["twilio>=9.0"]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[project.scripts]
+mail-a2a = "mail_a2a.runner:main"
+mail-a2a-email-mcp = "mail_a2a.mcp_servers.email_mcp:main"
+mail-a2a-whatsapp-mcp = "mail_a2a.mcp_servers.whatsapp_mcp:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

@@ -1,0 +1,29 @@
+environment: production
+
+fullnameOverride: nest-js-demo
+
+ingress:
+  enabled: true
+  hosts:
+    - host: nest-js-demo.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+
+replicaCount: 2
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5
+
+kafka:
+  enabled: true
+  brokers: kafka:29092
+
+config:
+  nodeEnv: production
+  corsOrigin: https://nest-js-demo.example.com
+
+secrets:
+  jwtSecret: production-jwt-secret-change-me

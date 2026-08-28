@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "nest-js-demo.fullname" . }}-config
+  labels:
+    {{- include "nest-js-demo.labels" . | nindent 4 }}
+data:
+  NODE_ENV: {{ .Values.config.nodeEnv | quote }}
+  PORT: {{ .Values.config.port | quote }}
+  DATABASE_PATH: {{ .Values.config.databasePath | quote }}
+  JWT_EXPIRES_IN: {{ .Values.config.jwtExpiresIn | quote }}
+  CORS_ORIGIN: {{ .Values.config.corsOrigin | quote }}
+  KAFKA_CLIENT_ID: {{ .Values.config.kafkaClientId | quote }}
+  KAFKA_CONSUMER_GROUP: {{ .Values.config.kafkaConsumerGroup | quote }}
+  KAFKA_BROKERS: {{ include "nest-js-demo.kafkaBrokers" . | quote }}

@@ -1,0 +1,482 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Node.js Middleware Demo",
+    "description": "Full API collection for the production Express middleware demo.\n\n**Setup**\n1. Start the app (`npm run dev` or `docker compose up --build`)\n2. Run **Auth → Login (user)** first — it saves `accessToken` to collection variables\n3. For cookie/CSRF flows, enable cookies in Postman and run **Get CSRF Token** then **Login** before session-based POSTs\n\n**Demo credentials**\n- user@demo.local / password123\n- admin@demo.local / password123\n- API key: demo-service-api-key\n- Metrics basic: metrics / metrics-secret",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:3000" },
+    { "key": "accessToken", "value": "" },
+    { "key": "adminAccessToken", "value": "" },
+    { "key": "csrfToken", "value": "" },
+    { "key": "apiKey", "value": "demo-service-api-key" },
+    { "key": "idempotencyKey", "value": "demo-order-001" },
+    { "key": "customerId", "value": "c-1" },
+    { "key": "orderId", "value": "" },
+    { "key": "metricsUser", "value": "metrics" },
+    { "key": "metricsPassword", "value": "metrics-secret" }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/health",
+            "description": "Liveness probe. Bypasses maintenance mode."
+          },
+          "response": []
+        },
+        {
+          "name": "Readiness check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/ready",
+            "description": "Readiness probe for orchestrators."
+          },
+          "response": []
+        },
+        {
+          "name": "Static index page",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/",
+            "description": "Served by express.static from /public."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Get CSRF Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "try {",
+                  "  const json = pm.response.json();",
+                  "  if (json.csrfToken) {",
+                  "    pm.collectionVariables.set('csrfToken', json.csrfToken);",
+                  "  }",
+                  "} catch (e) {}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/auth/csrf",
+            "description": "Issues double-submit CSRF cookie + token. Saves `csrfToken` for session-based mutating requests."
+          },
+          "response": []
+        },
+        {
+          "name": "Login (user)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Login succeeded', function () {",
+                  "  pm.response.to.have.status(200);",
+                  "});",
+                  "const json = pm.response.json();",
+                  "if (json.accessToken) {",
+                  "  pm.collectionVariables.set('accessToken', json.accessToken);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"user@demo.local\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": "{{baseUrl}}/api/auth/login",
+            "description": "Passport Local login. Sets session cookie and returns JWT. Saves `accessToken`."
+          },
+          "response": []
+        },
+        {
+          "name": "Login (admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (json.accessToken) {",
+                  "  pm.collectionVariables.set('adminAccessToken', json.accessToken);",
+                  "  pm.collectionVariables.set('accessToken', json.accessToken);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"admin@demo.local\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": "{{baseUrl}}/api/auth/login",
+            "description": "Admin login — useful to compare PII masking (SSN last-4 visible to admin)."
+          },
+          "response": []
+        },
+        {
+          "name": "Me (Bearer JWT)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/auth/me",
+            "description": "Current user via Passport JWT strategy."
+          },
+          "response": []
+        },
+        {
+          "name": "Me (session cookie)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/auth/me",
+            "description": "Current user via express-session + passport.session(). Requires prior Login in this Postman session (cookie jar)."
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "x-csrf-token", "value": "{{csrfToken}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}"
+            },
+            "url": "{{baseUrl}}/api/auth/logout",
+            "description": "Destroys session. Include CSRF header if calling with session cookie."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Customers",
+      "item": [
+        {
+          "name": "List customers (masked PII)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/customers",
+            "description": "Returns customers with privacy middleware masking email/phone/SSN/card. Admin retains SSN last-4."
+          },
+          "response": []
+        },
+        {
+          "name": "Get customer by id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/customers/{{customerId}}",
+            "description": "Fetch single customer. Seed id is `c-1`."
+          },
+          "response": []
+        },
+        {
+          "name": "Create customer (JWT)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+            },
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Pat Rivera\",\n  \"email\": \"pat.rivera@example.com\",\n  \"phone\": \"+15550199\",\n  \"ssn\": \"111-22-3333\",\n  \"cardNumber\": \"4111111111111111\"\n}"
+            },
+            "url": "{{baseUrl}}/api/customers",
+            "description": "Create customer via Bearer JWT (CSRF skipped for Bearer clients)."
+          },
+          "response": []
+        },
+        {
+          "name": "Create customer (session + CSRF)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "x-csrf-token", "value": "{{csrfToken}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Casey Ng\",\n  \"email\": \"casey.ng@example.com\",\n  \"phone\": \"+15550288\",\n  \"ssn\": \"222-33-4444\",\n  \"cardNumber\": \"5500000000000004\"\n}"
+            },
+            "url": "{{baseUrl}}/api/customers",
+            "description": "Cookie-session create. Run Get CSRF Token + Login first. Demonstrates CSRF middleware."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "List orders",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/orders"
+          },
+          "response": []
+        },
+        {
+          "name": "Get order by id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/orders/{{orderId}}",
+            "description": "Set `orderId` after Create order (auto-saved by that request's test script)."
+          },
+          "response": []
+        },
+        {
+          "name": "Create order (idempotent)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "// Keep a stable key for replay demos; change to force a new order",
+                  "if (!pm.collectionVariables.get('idempotencyKey')) {",
+                  "  pm.collectionVariables.set('idempotencyKey', 'demo-order-' + Date.now());",
+                  "}"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (json.data && json.data.id) {",
+                  "  pm.collectionVariables.set('orderId', json.data.id);",
+                  "  pm.collectionVariables.set('customerId', json.data.customerId);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+            },
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Idempotency-Key", "value": "{{idempotencyKey}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerId\": \"{{customerId}}\",\n  \"sku\": \"SKU-42\",\n  \"quantity\": 2,\n  \"amountCents\": 1999\n}"
+            },
+            "url": "{{baseUrl}}/api/orders",
+            "description": "Requires Idempotency-Key. Replaying with the same key returns the same order id."
+          },
+          "response": []
+        },
+        {
+          "name": "Create order (replay same Idempotency-Key)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+            },
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Idempotency-Key", "value": "{{idempotencyKey}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerId\": \"{{customerId}}\",\n  \"sku\": \"SKU-42\",\n  \"quantity\": 2,\n  \"amountCents\": 1999\n}"
+            },
+            "url": "{{baseUrl}}/api/orders",
+            "description": "Should return the identical order as the previous create (idempotency middleware + store)."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Uploads",
+      "item": [
+        {
+          "name": "Upload avatar (multer)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [{ "key": "token", "value": "{{accessToken}}", "type": "string" }]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "avatar",
+                  "type": "file",
+                  "src": [],
+                  "description": "Select a PNG, JPEG, or WebP file (max 1MB)."
+                }
+              ]
+            },
+            "url": "{{baseUrl}}/api/uploads/avatar",
+            "description": "Multipart upload via multer. Field name must be `avatar`."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Metrics",
+      "item": [
+        {
+          "name": "Prometheus metrics (Basic Auth)",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                { "key": "username", "value": "{{metricsUser}}", "type": "string" },
+                { "key": "password", "value": "{{metricsPassword}}", "type": "string" }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/metrics",
+            "description": "Prometheus text format. Protected by HTTP Basic Auth."
+          },
+          "response": []
+        },
+        {
+          "name": "JSON metrics (API key)",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [
+              { "key": "x-api-key", "value": "{{apiKey}}" }
+            ],
+            "url": "{{baseUrl}}/api/metrics/json",
+            "description": "Machine-to-machine metrics via API key middleware."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Demo Errors",
+      "item": [
+        {
+          "name": "Operational AppError (400)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/demo-errors/app-error",
+            "description": "Exercises centralized error handler with operational AppError."
+          },
+          "response": []
+        },
+        {
+          "name": "Unhandled error (500)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/demo-errors/unhandled",
+            "description": "Unexpected Error → 500 envelope (stack only in non-production)."
+          },
+          "response": []
+        },
+        {
+          "name": "Validation error (Zod)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"mustBeEmail\": \"not-an-email\"\n}"
+            },
+            "url": "{{baseUrl}}/api/demo-errors/validation",
+            "description": "Triggers ZodError → 400 VALIDATION_ERROR."
+          },
+          "response": []
+        },
+        {
+          "name": "Request timeout (408)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/demo-errors/timeout",
+            "description": "Handler sleeps longer than REQUEST_TIMEOUT_MS → 408 from timeout middleware. Increase Postman request timeout if needed."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+node_modules
+dist
+coverage
+data
+.env
+.env.*
+!.env.example
+.git
+.github
+helm
+infra
+k8s
+docs
+tests/automation/test-results
+tests/automation/playwright-report
+*.md
+npm-debug.log*

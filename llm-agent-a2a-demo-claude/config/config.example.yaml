@@ -1,0 +1,92 @@
+# Copy to config/config.yaml and fill in your credentials.
+# Every value below can be overridden by an environment variable (see README).
+
+mailbox:
+  # imap = real mailbox, demo = read data/sample_emails.json (no credentials needed)
+  provider: demo
+
+  # --- Gmail / Yahoo / Fastmail: app password over plain IMAP LOGIN ---
+  # host: imap.gmail.com
+  # port: 993
+  # username: you@gmail.com
+  # auth: password
+  # password: "your-16-char-app-password"
+
+  # --- Outlook.com / Office 365: Microsoft blocks password LOGIN, use OAuth2 ---
+  host: outlook.office365.com
+  port: 993
+  username: you@outlook.com
+  auth: password              # password | oauth2
+  password: ""
+  ssl: true
+  folder: INBOX
+  unread_only: true
+  mark_seen: false            # set true to flag mail as read once notified
+
+  # Only used when auth: oauth2. Register an app at entra.microsoft.com,
+  # add the delegated IMAP.AccessAsUser.All permission, and paste the client id.
+  oauth_client_id: ""
+  oauth_tenant: consumers     # consumers | organizations | common | <tenant-guid>
+  oauth_token_cache: data/state/msal_token.json
+
+whatsapp:
+  # console = print the message (works with zero credentials, good for the demo)
+  # meta    = WhatsApp Cloud API
+  # twilio  = Twilio WhatsApp API (requires: pip install '.[twilio]')
+  provider: console
+
+  # Destination number in international format, digits only, no '+'.
+  to: "971568896895"
+
+  meta:
+    access_token: ""
+    # Phone Number ID from WhatsApp Manager > API Setup.
+    # NOT the System User ID and NOT the WhatsApp Business Account ID —
+    # those return "code 100, subcode 33: object does not exist".
+    phone_number_id: ""
+    api_version: "v21.0"
+    # text     = free-form, only allowed inside the 24h customer-care window
+    # template = required for business-initiated messages; needs an approved template
+    message_mode: text
+    template_name: email_alert
+    template_language: en
+
+  twilio:
+    account_sid: ""
+    auth_token: ""
+    from_number: "whatsapp:+14155238886"   # Twilio sandbox number
+
+ollama:
+  base_url: http://localhost:11434
+  model: deepseek-r1:1.5b
+  timeout_seconds: 180
+  temperature: 0.2
+  # DeepSeek R1 reasons before answering. With think enabled the reasoning eats
+  # the whole token budget and the answer comes back empty — leave this false.
+  think: false
+  # If Ollama is unreachable the agents fall back to deterministic templates
+  # rather than dropping the notification.
+  required: false
+
+# An email whose subject or body contains any of these gets the TOP PRIORITY flag.
+priority_keywords:
+  - job
+  - opportunity
+  - opening
+  - position
+
+agents:
+  mailbox:
+    host: 127.0.0.1
+    port: 9101
+  whatsapp:
+    host: 127.0.0.1
+    port: 9102
+
+logging:
+  level: INFO
+  file: logs/agents.log
+
+max_emails: 10
+poll_interval_seconds: 60
+state_file: data/state/seen.json

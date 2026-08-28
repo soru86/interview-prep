@@ -1,0 +1,8 @@
+node_modules
+dist
+coverage
+data
+.env
+*.sqlite
+*.sqlite-journal
+src/schema.gql

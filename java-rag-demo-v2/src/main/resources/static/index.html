@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Middle East RAG Chat v2 (Offline)</title>
+  <style>
+    :root {
+      --bg: #10141b;
+      --panel: #1a212e;
+      --ink: #e9eef6;
+      --muted: #8d9bb2;
+      --accent: #4fae8a;
+      --accent-dim: #35735c;
+      --user: #253247;
+      --bot: #1e2938;
+      --border: #2c3a4f;
+      --danger: #e86a6a;
+      --ok: #5ecf8e;
+      --think: #a48ae0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #14372b 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #1c2a44 0%, transparent 45%),
+        var(--bg);
+    }
+
+    .shell {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.55rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    .meta {
+      margin-top: 0.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .meta code {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 0.2rem 0.45rem;
+      border-radius: 4px;
+      color: var(--ink);
+    }
+
+    .chat {
+      flex: 1;
+      margin-top: 1.25rem;
+      background: color-mix(in srgb, var(--panel) 88%, transparent);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      overflow-y: auto;
+      min-height: 420px;
+      max-height: calc(100vh - 240px);
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .msg {
+      max-width: 92%;
+      padding: 0.75rem 0.9rem;
+      border-radius: 10px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-size: 0.95rem;
+    }
+
+    .msg.user {
+      align-self: flex-end;
+      background: var(--user);
+      border: 1px solid var(--border);
+    }
+
+    .msg.bot {
+      align-self: flex-start;
+      background: var(--bot);
+      border: 1px solid var(--border);
+    }
+
+    .msg .label {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+
+    details.think {
+      margin: -0.1rem 0 0.5rem;
+      border-left: 3px solid var(--think);
+      background: rgba(164, 138, 224, 0.07);
+      border-radius: 0 8px 8px 0;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    details.think summary {
+      cursor: pointer;
+      padding: 0.35rem 0.6rem;
+      color: var(--think);
+      font-weight: 600;
+      user-select: none;
+    }
+
+    details.think .think-body {
+      padding: 0 0.7rem 0.55rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+
+    .sources {
+      align-self: stretch;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-left: 3px solid var(--accent-dim);
+      padding: 0.4rem 0.7rem;
+      background: rgba(79, 174, 138, 0.06);
+    }
+
+    .sources strong { color: var(--ink); }
+
+    form {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    textarea {
+      flex: 1;
+      resize: vertical;
+      min-height: 52px;
+      max-height: 140px;
+      padding: 0.75rem 0.85rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+    }
+
+    textarea:focus {
+      outline: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+      border-color: var(--accent);
+    }
+
+    button {
+      border: 0;
+      border-radius: 10px;
+      padding: 0 1.15rem;
+      background: linear-gradient(180deg, var(--accent), var(--accent-dim));
+      color: white;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    .status {
+      margin-top: 0.55rem;
+      min-height: 1.2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .status.error { color: var(--danger); }
+    .status.ok { color: var(--ok); }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <h1>Middle East War Updates — RAG Chat v2</h1>
+      <p>
+        Fully offline: DeepSeek R1 + nomic-embed-text on Ollama, Qdrant vectors.
+        Ask about events from 28 Feb 2026 – 13 Jul 2026. Answers stream in real time;
+        the model's reasoning is shown in a collapsible section.
+      </p>
+      <div class="meta">
+        <span>Session <code id="sessionId">…</code></span>
+        <span>SSE streaming · Qdrant · Ollama · DeepSeek R1</span>
+      </div>
+    </header>
+
+    <div class="chat" id="chat" aria-live="polite"></div>
+
+    <form id="form">
+      <textarea id="input" rows="2" placeholder="e.g. What did the 17 June 2026 U.S.–Iran MoU include?" required></textarea>
+      <button type="submit" id="send">Send</button>
+    </form>
+    <div class="status" id="status"></div>
+  </div>
+
+  <script>
+    const chat = document.getElementById("chat");
+    const form = document.getElementById("form");
+    const input = document.getElementById("input");
+    const send = document.getElementById("send");
+    const statusEl = document.getElementById("status");
+    const sessionEl = document.getElementById("sessionId");
+
+    let sessionId = localStorage.getItem("ragV2SessionId") || crypto.randomUUID();
+    localStorage.setItem("ragV2SessionId", sessionId);
+    sessionEl.textContent = sessionId;
+
+    function addMessage(role, text) {
+      const div = document.createElement("div");
+      div.className = "msg " + role;
+      const label = document.createElement("span");
+      label.className = "label";
+      label.textContent = role === "user" ? "You" : "Assistant";
+      div.appendChild(label);
+
+      let thinkBody = null;
+      if (role === "bot") {
+        const details = document.createElement("details");
+        details.className = "think";
+        details.style.display = "none";
+        const summary = document.createElement("summary");
+        summary.textContent = "Reasoning";
+        details.appendChild(summary);
+        thinkBody = document.createElement("div");
+        thinkBody.className = "think-body";
+        details.appendChild(thinkBody);
+        div.appendChild(details);
+      }
+
+      const body = document.createElement("span");
+      body.className = "body";
+      body.textContent = text;
+      div.appendChild(body);
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
+      return { body, thinkBody };
+    }
+
+    function addSources(payload) {
+      const chunks = payload.chunks || [];
+      if (!chunks.length) return;
+      const box = document.createElement("div");
+      box.className = "sources";
+      const lines = chunks.map((c, i) =>
+        `#${i + 1} score=${Number(c.score).toFixed(3)} — ${c.preview}`
+      );
+      box.innerHTML = "<strong>Sources used</strong><br>" + lines.join("<br>");
+      chat.appendChild(box);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function setStatus(text, cls) {
+      statusEl.textContent = text || "";
+      statusEl.className = "status" + (cls ? " " + cls : "");
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const message = input.value.trim();
+      if (!message) return;
+
+      addMessage("user", message);
+      input.value = "";
+      send.disabled = true;
+      setStatus("Streaming…");
+
+      const { body: botBody, thinkBody } = addMessage("bot", "");
+      const thinkDetails = thinkBody ? thinkBody.parentElement : null;
+
+      try {
+        const res = await fetch("/api/chat", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-Session-Id": sessionId,
+            "Accept": "text/event-stream"
+          },
+          body: JSON.stringify({ message })
+        });
+
+        if (!res.ok || !res.body) {
+          throw new Error("Chat request failed (" + res.status + ")");
+        }
+
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = "";
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+
+          const parts = buffer.split("\n\n");
+          buffer = parts.pop() || "";
+
+          for (const part of parts) {
+            const lines = part.split("\n");
+            let event = "message";
+            let data = "";
+            for (const line of lines) {
+              if (line.startsWith("event:")) event = line.slice(6).trim();
+              if (line.startsWith("data:")) data += line.slice(5).trim();
+            }
+            if (!data) continue;
+
+            let payload;
+            try { payload = JSON.parse(data); } catch { continue; }
+
+            if (event === "session" && payload.sessionId) {
+              sessionId = payload.sessionId;
+              localStorage.setItem("ragV2SessionId", sessionId);
+              sessionEl.textContent = sessionId;
+            } else if (event === "sources") {
+              addSources(payload);
+            } else if (event === "thinking" && payload.content) {
+              if (thinkDetails) {
+                thinkDetails.style.display = "";
+                thinkBody.textContent += payload.content;
+                thinkBody.scrollTop = thinkBody.scrollHeight;
+              }
+            } else if (event === "token" && payload.content) {
+              botBody.textContent += payload.content;
+              chat.scrollTop = chat.scrollHeight;
+            } else if (event === "error") {
+              throw new Error(payload.message || "Stream error");
+            } else if (event === "done") {
+              setStatus("Done", "ok");
+            }
+          }
+        }
+
+        if (!botBody.textContent) {
+          botBody.textContent = "(empty response)";
+        }
+        setStatus("Done", "ok");
+      } catch (err) {
+        setStatus(err.message || String(err), "error");
+        if (!botBody.textContent) {
+          botBody.textContent = "Sorry — something went wrong.";
+        }
+      } finally {
+        send.disabled = false;
+        input.focus();
+      }
+    });
+  </script>
+</body>
+</html>

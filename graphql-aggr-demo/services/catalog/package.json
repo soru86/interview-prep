@@ -1,0 +1,21 @@
+{
+  "name": "catalog-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "build": "nest build", "start:dev": "nest start --watch" },
+  "dependencies": {
+    "@graphql-aggr/service-mesh": "*",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/microservices": "^11.1.21",
+    "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/typeorm": "^11.0.1",
+    "kafkajs": "^2.2.4",
+    "pg": "^8.14.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.29"
+  },
+  "devDependencies": { "@nestjs/cli": "^11.0.0", "@types/node": "^24.0.0", "typescript": "^5.7.3" }
+}

@@ -1,0 +1,13 @@
+{
+  "host": "localhost",
+  "port": 5432,
+  "user": "postgres",
+  "password": "postgres",
+  "database": "postgres",
+  "ssl": false,
+  "poolMax": 5,
+  "readonly": true,
+  "allowedSchemas": ["public"],
+  "queryTimeoutMs": 30000,
+  "maxRows": 1000
+}

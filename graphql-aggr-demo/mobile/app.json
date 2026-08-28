@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "GraphQL Aggr Demo",
+    "slug": "graphql-aggr-demo",
+    "version": "1.0.0",
+    "scheme": "graphqlaggr",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": true },
+    "android": { "adaptiveIcon": { "backgroundColor": "#f5f5f5" } }
+  }
+}

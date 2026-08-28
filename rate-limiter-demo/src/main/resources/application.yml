@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+rate-limiter:
+  enabled: true
+  type: token-bucket
+  key-source: client-ip
+  exclude-paths:
+    - /actuator/**
+
+  token-bucket:
+    bucket-size: 10
+    refill-rate: 5
+    refill-interval: 1s
+
+  leaky-bucket:
+    bucket-size: 10
+    leak-rate: 2
+    leak-interval: 1s
+
+  fixed-window:
+    limit: 100
+    window: 1m
+
+  sliding-window-log:
+    limit: 100
+    window: 1m
+
+  sliding-window-counter:
+    limit: 100
+    window: 1m
+    sub-windows: 10
