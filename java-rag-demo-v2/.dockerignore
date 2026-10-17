@@ -1,6 +1,0 @@
-target/
-data/
-.env
-.git/
-*.md
-.idea/
